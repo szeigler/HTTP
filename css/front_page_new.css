@@ -1,0 +1,274 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Features */
+
+.hide-until-load {
+	display:none;	
+}
+
+#main{
+	text-align:center;
+}
+
+#slideshow_container {
+	height:355px;
+	display:block;
+	background-color: #2a3d5b;
+}
+
+#slideshow {
+	width:653px;
+	height:355px;
+	display:block;
+	overflow:hidden;/*keep all slides from showing immediately when the page is opened*/
+}
+
+#nav {
+	position:absolute;
+	bottom:auto;
+	left:85px;
+	padding-bottom:7px;
+	padding-top:8px;
+	bottom:0px;
+}
+
+#nav a { 
+	border: 1px solid #fff; 
+	background: #2a3d5b; 
+	text-decoration: none; 
+	margin: 0 5px; padding: 3px 5px;
+	font-size:6px;  
+}  
+
+#nav a.activeSlide { background: #fff }  
+
+#nav a:focus { outline: none; }
+
+#toggle {
+	height:30px;
+	width:30px;
+	overflow:hidden;
+	margin-bottom:-14px;
+	margin-left:-85px;
+}
+
+#feature_nav_container {
+	width:850px;
+	height:355px;
+	display:block;
+	background-color: #f8b800;
+	padding:5px;
+	margin-top:30px;
+	margin-bottom:30px;
+	z-index:49;
+	margin:auto;
+	
+}
+
+#feature_nav {
+	float:right;
+	overflow:hidden;
+	z-index:47;
+	}
+
+/*feature_nav_pager*/
+
+	#pager {
+		float:left;
+		padding:5px;
+		z-index:47;
+	}
+	
+	#pager li {
+		list-style-type:none;
+		text-align:right;
+		margin-top:20px;
+	}
+
+	#pager a {   
+		text-decoration: none; 
+		margin: 0 5px; 
+		padding: 3px 5px;
+		font-size:14px;
+		color:#ffffff;  
+	}  
+
+	#pager a.activeSlide { background: #fff }  
+
+	#pager a:focus { outline: none;
+	}
+	
+	#pager a:hover {
+		background-color:#7d889b;
+		text-decoration:none;
+	}
+	
+	#features {
+		text-align:right;
+		font-style:italic;
+		text-decoration:none;
+		font-size:18px;
+		color:#ffffff;
+		margin-top:0px;
+	}
+
+/*noscript_ouroffices*/
+
+	#noscript_ouroffices {
+		background-image:url(../frontpage_images/our_offices.png);
+		background-repeat: no-repeat;
+		width:653px;
+		height:355px;
+		margin-bottom:20px;
+	}
+	
+	#noscript_ouroffices table {
+		margin-left:250px;
+		margin-top:140px;
+		text-align:left;
+	}
+
+	#noscript_ouroffices table p {
+		font-size:12px;
+	}
+
+	#noscript_ouroffices table, #noscript_ouroffices tr, #noscript_ouroffices td {
+		background-color:transparent;
+	}
+
+	#right_col{
+		float:right;
+	}
+
+/*ouroffices*/
+
+	#ouroffices	{
+		background-image:url(../frontpage_images/our_offices.png);
+		background-repeat: no-repeat;
+		width:653px;
+		height:355px;
+	}
+
+	#ouroffices-content	{
+		margin-left:250px;
+		margin-top:120px;
+	}
+
+	#ouroffices-content h1 {
+		font-size:26px;
+	}
+
+	#ouroffices-content table {
+		margin-left:15px;
+		margin-top:20px;
+		text-align:left;
+	}
+
+	#ouroffices-content table p {
+		font-size:12px;
+	}
+
+	#ouroffices-content table, #ouroffices-content tr, #ouroffices-content td {
+		background-color:transparent;
+	}
+
+	#right_col{
+		float:right;
+	}
+	
+/*VCUeRA*/
+
+	#VCUeRA	{
+		background-image:url(../frontpage_images/VCUeRA.png);
+		background-repeat: no-repeat;
+		width:653px;
+		height:355px;
+	}
+	
+	#VCUeRA_content table, #VCUeRA_content tr, #VCUeRA_content td {
+	background-color:transparent;
+	margin-bottom: 0px;
+	}
+	
+	#VCUeRA_content table, #VCUeRA_content td, #VCUeRA_content tr, #VCUeRA_content p {
+		font-size:11px;
+		text-align:left;
+		margin-bottom:0px;
+		
+	}
+	
+	#VCUeRA_content_table {
+		margin-top:135px;
+	}
+	
+
+/*research_resources*/
+
+	#research_resources	{
+		background-image:url(../frontpage_images/research_resources.png);
+		background-repeat: no-repeat;
+		width:653px;
+		height:355px;
+	}
+	
+	#research_resources_content {
+		position:absolute;
+		left:40px;
+		top:130px;
+	}
+
+	#research_resources_content	p{
+		font-size:14px;
+		text-align:left;
+		margin-bottom:.5em;
+	}
+	
+	
+/*training_workshops*/
+
+	#training_workshops	{
+		background-image:url(../frontpage_images/training_workshops.png);
+		background-repeat: no-repeat;
+		width:653px;
+		height:355px;
+	}
+	
+	#training_workshops_content {
+		position:absolute;
+		left:170px;
+		top:110px;
+	}
+
+	#training_workshops_content	p{
+		font-size:15px;
+		text-align:left;
+		margin-bottom:.5em;
+	}
+	
+/*research_a-z*/
+
+	#research_a-z	{
+		background-image:url(../frontpage_images/research_a-z.png);
+		background-repeat: no-repeat;
+		width:653px;
+		height:355px;
+	}
+	
+	#research_a-z_content {
+		position:absolute;
+		left:285px;
+		top:87px;
+	}
+	
+	#research_a-z_content table, #research_a-z_content tr, #research_a-z_content td {
+		background-color:transparent;
+		font-size:16px;
+	}
+	
+	#research_a-z span {
+		font-size:30px;
+		position:absolute;
+		top:30px;
+		left:350px;
+	}

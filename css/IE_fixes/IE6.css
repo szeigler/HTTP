@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+	body {
+		background-color:#eaeaea;
+		}
+
+	#vcu_research {
+    	width:334px;
+        }
+        
+    #identity_search {
+    	width:692px;
+        }
+        
+    #header {
+    	padding-bottom:0;
+     	}
+        
+    #main {
+    	width:1000px;
+        background-color:#eaeaea;
+        }
+        
+    #content {
+    	width:670px;
+        margin-left:30px;
+        margin-top:40px;
+        margin-bottom:40px;
+        margin-right:10px;
+        }
+        
+    #head_image {
+    	width:136px;
+        margin-left:0;
+        margin-top:0;
+        }
+		
+	#head_image img {
+    	width:100%;
+		float:right;
+        }
+        
+    #heading_bar {
+    	width:514px;
+        margin-left:.5em;
+		float:left;
+        }
+		
+	h1 {
+		padding-left:20px;
+	}
+        
+    #content_text {
+    	padding-top:5em;
+        }
+        
+    #right_nav {
+    	width:208px;
+        margin-top:55px;
+        margin-bottom:40px;
+        }
+		
+	#right_nav #helpline img {
+		width:100%;
+		}        
+		
+	#top_nav ul ul li a,
+	#top_nav ul li.active li a,
+	#top_nav ul li:hover ul li a,
+	#top_nav ul li.hover ul li a { /* This line is required for IE 6 and below */
+		border-bottom:1px solid #ddd; /* sub menu item horizontal lines */
+	}
+	
+	#footer_nav {
+		width:800px;
+		margin:auto;
+		margin-top:2em;
+	}
+	
+	
+/*landing page level 1*/
+
+#landing_page_nav {
+	width:670px;
+	margin:37px 15px 2em 30px;
+	padding-bottom:1em;
+	float:left;
+}
+
+.nav_section {
+	width:295px;
+	height:200px;
+}
+
+.level_2_nav_section {
+	width:250px;
+	margin: 0 3% 0 1.5%;
+}

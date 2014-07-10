@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+#skip_link {
+	display:none;
+}
+
+#header {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	width:100%;
+}
+
+#search {
+	display:none;
+}
+
+#top_nav_container {
+	display:none;
+}
+
+#heading_bar {
+	width:100%;
+	background-color:#f8b800;
+	-webkit-print-color-adjust: exact;
+}
+
+#head_image {
+	display:none;
+}
+
+#content {
+	width:100%
+}
+
+#landing_page_nav {
+	width:100%;
+}
+
+#landing_page_content img:first-of-type {
+	display:none;
+}
+
+#right_nav {
+	display:none;
+}

@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+
+<!--[if IE 8]>
+<style>
+	#vcu_research {
+    	width:56.647399% /*392px/692*/
+        }
+</style>
+<![endif]-->
+
+<!--[if IE 7]>
+
+<style>
+
+	#vcu_research {
+    	width:392px;
+        }
+        
+    #identity_search {
+    	max-width:692px;
+        }
+        
+    #header {
+    	padding-bottom:0;
+     	}
+        
+    #top_nav_container {
+    	width:900px;
+        }
+    
+    #main {
+    	width:960px;
+        }
+        
+    #content_text {
+    	padding-top:0;
+        }
+        
+    #footer_nav {
+    	width:960px;
+        }
+
+</style>
+
+<![endif]-->
+
+<!--[if IE 6]>
+
+<style>
+
+	#vcu_research {
+    	width:392px;
+        }
+        
+    #identity_search {
+    	max-width:692px;
+        }
+        
+    #header {
+    	padding-bottom:0;
+     	}
+        
+    #top_nav_container {
+    	width:900px;
+        }
+        
+    #main {
+    	width:960px;
+        background-color:#eaeaea;
+        }
+        
+    #content {
+    	width:633px;
+        margin-left:30px;
+        margin-top:40px;
+        margin-bottom:40px;
+        margin-right:10px;
+        }
+        
+    #head_image {
+    	width:136px;
+        margin-left:0;
+        margin-top:0;
+        }
+        
+    #heading_bar {
+    	width:500px;
+        margin-left:65px;
+        }
+        
+    #content_text {
+    	padding-top:0px;
+        }
+        
+    #right_nav {
+    	width:208px;
+        margin-top:55px;
+        margin-right:30px;
+        margin-bottom:40px;
+        }
+        
+    
+    #footer_nav {
+    	width:960px;
+        }
+
+</style>
+
+<script type="text/javascript" src="../js/iehoverfix.js"></script>
+
+<![endif]-->
