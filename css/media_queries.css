@@ -15,6 +15,10 @@
 }
 
 @media screen and (max-width:900px) {
+	#search {
+		padding-top:.65em;
+	}
+	
 	#main #right_nav {
 		float:left;
 		margin-top:0;
@@ -240,7 +244,7 @@
 	
 	#vcu_research img {
 		margin:auto;
-		width:55%;
+		width:90%;
 	}
 	
 	#right_nav ul:first-of-type {

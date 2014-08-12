@@ -47,7 +47,7 @@
         <span id="skip_link"><a href="#mainContent">skip to main content</a></span>
         <div id="identity_search">
         	<div id="vcu_research">
-            	<a href="../index.htm"><img src="../images/identity_header/office_research.png" alt="Office of Research and Innovation" id="office_research" /></a>
+            	<a href="../index.htm"><img src="../images/identity_header/office_research_new.png" alt="Office of Research and Innovation" id="office_research" /></a>
         	</div><!--end vcu_research-->
 			<div id="search">
   				<form action="http://search.vcu.edu/search" method="get">

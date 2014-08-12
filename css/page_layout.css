@@ -33,14 +33,14 @@ img {max-width:100%;}
 }
 
 #identity_search {
-	width:80%; /*692px/1000px*/
+	width:65.53755522827688%; /*890px/1358px*/
 	margin:auto;
-	max-width:692px;
+	max-width:890px;
 }
 
 #vcu_research {
 	float:left;
-	width:48.265896%; /*334px/692px*/
+	width:61.79775280898876%; /*550px/890px*/
 }
 
 #vcu_research a, #vcu_research a:link, #vcu_research a:visited, #vcu_research a:hover, #vcu_research a:active, #logo_bar a, #logo_bar a:link, #logo_bar a:visited, #logo_bar a:hover, #logo_bar a:active {
@@ -51,7 +51,7 @@ img {max-width:100%;}
 /* Search*/
 #search {
 	z-index:15;
-	width:40%;
+	width:35%; /*277px/890px*/
 	float:right;
 	padding-top:1.2em;
 }
