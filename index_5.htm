@@ -53,7 +53,6 @@
   		float: left;
   		width: 100%;
 		margin:auto;
-		background-color:#f8b800;
 	}
 	
 	.rslides {
@@ -139,7 +138,7 @@
 		padding-top:1em; 	
 	}
 	
-	#main_events, #utilities {
+	#main_events, #utilities, #quick_links_thumbs, #vp_block, #vcuera_block, #helpline_block {
 		-webkit-border-radius: 10px; 
 		-moz-border-radius: 10px; 
 		-o-border-radius: 10px; 
@@ -260,37 +259,71 @@
 	#quick_links_thumbs {
 		width:45.5%;
 		float:left;
+		background-color:#f8b800;
+		margin-bottom:2%;
+		text-align:center;
+	}
+	
+	#quick_links_thumbs ul {
+		margin-left:0;
+	}
+	
+	#quick_links_thumbs h2 {
+		font-family: "Enriqueta",serif;
+		font-weight:bold;
+		color:#fff;
+		padding-bottom:0;
+		font-size:1.15em;
+	}
+	
+	.quick_links_section {
+		width:32%;
+		display:inline-block;
+		vertical-align:text-top;
+	}
+	
+	#quick_links_thumbs a{
+		color:#434343;
 	}
 	
 	#quick_links_thumbs a:hover {
 		border:0;
+		color:#fff;
 	}
 	
-	#quick_links_thumbs a:focus {
-		outline:none;
+	#tri_links {
+		width:45.5%;
+		float:left;
 	}
 	
-	#quick_links_thumbs img {
+	#tri_links a:hover {
+		border:0;
+	}
+	
+	#tri_links img {
 		width:31.65%;
-		margin-right:1%;
-		margin-bottom:1%;
-		-webkit-border-radius: 10px; 
-		-moz-border-radius: 10px; 
-		-o-border-radius: 10px; 
-		border-radius: 10px; 
-		-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); 
-		-moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); 
-		-o-box-shadow: 0 1px 4px rgba(0,0,0,.2); 
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-o-border-radius: 10px;
+		border-radius: 10px;
+		-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+		-moz-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+		-o-box-shadow: 0 1px 4px rgba(0,0,0,.2);
 		box-shadow: 0 1px 4px rgba(0,0,0,.2);
 		position:relative;
 		display:inline;
 		opacity: 1.0;
-		filter: alpha(opacity=100);		
+		filter: alpha(opacity=100);
 	}
 	
-	#quick_links_thumbs img:hover {
+	#tri_links img:hover {
 		opacity: 0.85;
 		filter: alpha(opacity=85);
+	}
+	
+	#vcuera_block {
+		margin-left:1.75%;
+		margin-right:1.75%;
 	}
 
 	@media screen and (max-width:900px) {
@@ -390,26 +423,43 @@
     </div>
     
     <div id="quick_links_thumbs">
-        <a href="vpr/index.htm"><img src="frontpage_images/vp_thumb.jpg" alt="Vice President for Research and Innovation" /></a>
-        <a href="ugresources/index.htm"><img src="frontpage_images/undergrad_square_thumb.jpg" alt="Undergraduate Resources" /></a>
-        <img src="frontpage_images/undergrad_square_thumb.jpg" alt="Undergraduate Resources" />
+        <div class="quick_links_section">
+        	<h2>Centers &amp; Cores</h2>
+            	<ul class="list_no_bullets">
+                	<li><a href="centers_cores/core_laboratories.htm">Research Cores</a></li>
+                    <li><a href="centers_cores/institutes.htm">Institutes and Centers</a></li>
+             	</ul>
+        </div>
         
-        <img src="frontpage_images/undergrad_square_thumb.jpg" alt="Undergraduate Resources" />
-        <img src="frontpage_images/undergrad_square_thumb.jpg" alt="Undergraduate Resources" />
-        <img src="frontpage_images/undergrad_square_thumb.jpg" alt="Undergraduate Resources" />
+        <div class="quick_links_section">
+        	<h2>Research Development</h2>
+            	<ul class="list_no_bullets">
+                	<li><a href="vpr/research_fund/index.htm">Research Quest Fund</a></li>
+                    <li><a href="vpr/grant_writing/index.htm">Grant Writing Institute</a></li>
+                    <li><a href="research_development/index.htm">Research Development</a></li>
+             	</ul>
+        </div>
         
-        <img src="frontpage_images/undergrad_square_thumb.jpg" alt="Undergraduate Resources" />
-        <img src="frontpage_images/undergrad_square_thumb.jpg" alt="Undergraduate Resources" />
-        <img src="frontpage_images/undergrad_square_thumb.jpg" alt="Undergraduate Resources" />    
-    </div>  
-
+        <div class="quick_links_section">
+        	<h2>Scholars</h2>
+            	<ul class="list_no_bullets">
+                	<li><a href="ugresources/index.htm">Undergraduate Research</a></li>
+                    <li><a href="postdoc/index.htm">Postdoctoral Services</a></li>
+             	</ul>
+        </div>  
+    </div>
+    	<div id="tri_links">
+            <a href="vpr/index.htm"><img src="frontpage_images/vp_block.png" alt="VP for Research and Innovation" id="vp_block" /></a>
+            <a href="vcuera/index.htm"><img src="frontpage_images/vcuera_block.png" alt="VCUeRA" id="vcuera_block" /></a>
+            <a href="http://www.assurance.vcu.edu/reporting.html" target="_blank"><img src="images/helpline_block.png" alt="Helpline Image" id="helpline_block" /></a> 
+		</div>
     </div><!--end content-->        
     
    <div id="signature">
   		<ul>
     		<li><a href="http://www.vcu.edu" target="_blank">Virginia Commonwealth University</a> | <a href="http://www.research.vcu.edu/" target="_blank">Office of Research and Innovation</a></li>
             <li>800 East Leigh Street  PO Box 980568 Richmond, VA 23298</li>
-            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->10/15/2014<!-- #EndDate --> | <a href="sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
+            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->10/21/2014<!-- #EndDate --> | <a href="sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
      	</ul>
 </div><!--end #signature-->
 
