@@ -23,7 +23,7 @@ img {max-width:100%;}
 }
 
 #logo_bar {
-	margin-bottom:.875em; /*14em/16em*/
+	margin-bottom:.5em;
 	max-width:100%;
 	background-color:#000000;
 }
@@ -81,7 +81,7 @@ button.search_btn {
 	background-color:#f8b800;
 	display:block;
 	float:left;
-	margin-top:1em;
+	margin-top:.5em;
 	text-align:center;
 }
 
