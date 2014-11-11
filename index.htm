@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
 <head>
 <meta charset="utf-8" />
-
-<!-- InstanceBeginEditable name="doctitle" -->
 <title>VCU Office of Research and Innovation</title>
 
 <meta name="Description" content="VCU Office of Research and Innovation enables investigators to effectively compete for research funding, responsibly conduct research in compliance with mandated policies, and broadly disseminate knowledge gained and discoveries made." />
-<!-- InstanceEndEditable -->
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--iPhone image scaling fix-->
 
 <link href="css/page_layout.css" rel="stylesheet" type="text/css" media="all"/>
@@ -20,17 +16,10 @@
    
 <script type="text/javascript" src="http://www.research.vcu.edu/js/respond.js"></script>
 
-<!--[if IE 6]>
-	<link a href="http://www.research.vcu.edu/css/IE_fixes/IE6.css" rel="stylesheet" type="text/css" media="all"/>
-	<script type="text/javascript" src="http://www.research.vcu.edu/js/iehoverfix.js"></script>
-<![endif]-->
-
 <!--[if IE 7]>
 	<link a href="http://www.research.vcu.edu/css/IE_fixes/IE7.css" rel="stylesheet" type="text/css" media="all"/>
 	<script type="text/javascript" src="http://www.research.vcu.edu/js/iehoverfix.js"></script>
 <![endif]-->
-
-<!-- InstanceBeginEditable name="head" -->
 
 <meta name="google-site-verification" content="A7X8OErxdLQiwlQrJ9sEc010aJvGPFTP3NByJ2ea6kw" />
 
@@ -41,65 +30,295 @@
 <script>
   $(function () {
     $("#slides").responsiveSlides({
-  auto: true,  // Boolean: Animate automatically
-  pagination: true,  // Boolean: Use pagination
-  pause: true,           // Boolean: Pause on hover, true or false
-  fade: 1000,  // Integer: Crossfade time (milliseconds)
-  maxwidth: 1379,  // Integer: Max-width of the Slideshow (pixels)
-  speed: 4000  // Integer: How long image shows before fading to next
+  auto: true, // Boolean: Animate automatically
+  pagination: false, // Boolean: Use pagination
+  nav:true,
+  pause: true, // Boolean: Pause on hover, true or false
+  fade: 1000, // Integer: Crossfade time (milliseconds)
+  maxwidth: 1379, // Integer: Max-width of the Slideshow (pixels)
+  speed: 4000 // Integer: How long image shows before fading to next
 	});
   });
 </script>
 
 <style>
 	
-	#content_text {
-		padding:0;
-	}	
-	
-	#heading_bar {
-		display:none;
+	#photo_album {
+		position: relative;
+  		float: left;
+  		width: 100%;
+		margin:auto;
 	}
 	
-	#photo_album {
+	.rslides {
+ 	 margin: 0 auto;
+  	}
+	
+	.rslides1_nav {
+		z-index: 3;
+  		position: absolute;
+  		-webkit-tap-highlight-color: rgba(0,0,0,0);
+  		top: 50%;
+  		left: 0;
+  		opacity: 0.7;
+  		text-indent: -9999px;
+  		overflow: hidden;
+  		text-decoration: none;
+  		height: 61px;
+  		width: 38px;
+  		background: transparent url("images/slider_nav.gif") no-repeat left top;
+  		margin-top: -45px;
+	}
+		
+	.rslides1_nav:active {
+		opacity: 1.0;
+	}
+		
+	.rslides1_nav.next {
+		left: auto;
+		background-position: right top;
+		right: 0;
+	}
+	
+	.rslides1_nav:focus, {
+  		outline: none;
+  	}
+	
+	@font-face {
+	  	font-family: 'utility';
+	  	src: url('fonts/utility.eot?78269532');
+	  	src: url('fonts/utility.eot?78269532#iefix') format('embedded-opentype'),
+		   	url('fonts/utility.woff?78269532') format('woff'),
+		   	url('fonts/utility.ttf?78269532') format('truetype'),
+		   	url('fonts/utility.svg?78269532#utility') format('svg');
+	  	font-weight: normal;
+	  	font-style: normal;
+		}
+	
+	[class^="icon-"]:before, [class*=" icon-"]:before {
+  		font-family: "utility";
+  		font-weight: normal;
+  		speak: none;
+ 		margin:auto;
+  		display:block;
+  		text-align: center; 
+  		/* For safety - reset parent styles, that can break glyph codes*/
+  		font-size: 250%;
+	}
+	
+	.icon-edit:before {content: '\e800';}
+	.icon-docs:before {content: '\e801';}
+	.icon-phone-1:before {content: '\e802';}
+	
+	#content {
+		width:100%;
+		margin-left:0;
+	}	
+	
+	#main_events {
+		width:40%;
+		margin: 2%;
+		background: #434343; 
+		float:left;
+		padding-top:1em;
+		text-align:center; 	
+	}
+	
+	#cal_xml_feed {
 		width:100%;
 		margin:auto;
-		background-color:#f8b800;
-		padding-bottom:1em;
 	}
 	
 	.nav_heading {
-		font-size:1.16666667em; /*14px/12px*/
-		font-family:Tahoma, Geneva, sans-serif;
+		font-size:2em;
+		font-family: "Enriqueta",serif;
 		font-weight:bold;
-		background-color:#434343;
-		padding:.4em 0em .4em 1em;
 		color:#fff;
+		padding-bottom:0;
+	}
+	
+	#cal_xml_feed td.cal_date {
+		font-family: "Enriqueta",serif;
+		font-size:1.3em;
+		font-weight:bold;
+		color:#f8b800;
+		background-color:#434343;
+		padding-top:1em;
+	}
+	
+	#cal_xml_feed  td.cal_time {
+		font-size:.95em;
+		color:#ccc;
+		text-align:center;
+		float:left;
+		width:100%;
+	}
+	
+	.cal_title a {color:#fff;}
+	
+	.cal_title a:hover {border-bottom: 1px solid #fff;}
+	
+	.cal_title {
+		float:left;
+		width:100%;
+		font-size:1.1em;
+	}
+	
+	.cal_location {display:none;}
+	
+	#main_events, #utilities, #quick_links_thumbs, #vp_block, #vcuera_block, #helpline_block, #tri_links img {
+		-webkit-border-radius: 10px; 
+		-moz-border-radius: 10px; 
+		-o-border-radius: 10px; 
+		border-radius: 10px; 
+		-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); 
+		-moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); 
+		-o-box-shadow: 0 1px 4px rgba(0,0,0,.2); 
+		box-shadow: 0 1px 4px rgba(0,0,0,.2);
+		position:relative;
+	}
+	
+	#utilities {
+		width:53%;
+		margin:0 2% 2% 0;
+		float:left;
+		background: #ccc;  
+	}
+	
+	#utilities div {
+		display:inline-block;	
+		width:33.1%;
+		text-align:center;
+		float:left;
+	}
+	
+	#utilities a {
+		padding:2em 0 2em 0;
+		display:block;
+		font-family:"Enriqueta",serif;
+		font-size:1.15em;
+		font-weight:bold;
+		color:#434343;
+	}
+	
+	#utilities a:hover {
+		background-color:#E0E0E0;
+		border:none;
+	}
+	
+	#forms a:hover {
+		-webkit-border-radius: 10px 0px 0px 10px; 
+		-moz-border-radius: 10px 0px 0px 10px; 
+		-o-border-radius: 10px 0px 0px 10px; 
+		border-radius: 10px 0px 0px 10px;
+	}
+	
+	#contact a:hover {
+		-webkit-border-radius: 0px 10px 10px 0px; 
+		-moz-border-radius: 0px 10px 10px 0px; 
+		-o-border-radius: 0px 10px 10px 0px; 
+		border-radius: 0px 10px 10px 0px;
+	}
+	
+	#policies {
+		border-left:1px solid #A8A8A8;
+		border-right:1px solid #A8A8A8;
+	}
+
+	#quick_links_thumbs {
+		width:53%;
+		float:left;
+		background-color:#f8b800;
+		margin: 2% 0 2% 0;
 		text-align:center;
 	}
 	
-	#main_events_detail {
-		width:75%;
-		padding-top:1em;
-		padding-bottom:1.5em;
-		margin:auto;
+	#quick_links_thumbs ul {
+		margin-left:0;
 	}
-
-    #cal_xml_feed {
-		margin:auto;
-		width: 95%;
-    }
 	
-	@media screen and (max-width:900px) {
-		#main_events_detail {
-			width:100%;
+	#quick_links_thumbs h2 {
+		font-family: "Enriqueta",serif;
+		font-weight:bold;
+		color:#fff;
+		padding-bottom:0;
+		font-size:1.3em;
+	}
+	
+	.quick_links_section {
+		width:32%;
+		display:inline-block;
+		vertical-align:text-top;
+	}
+	
+	#quick_links_thumbs a{
+		color:#434343;
+		font-size:1.1em;
+	}
+	
+	#quick_links_thumbs a:hover {
+		border:0;
+		color:#fff;
+	}
+	
+	#quick_links_rd {
+		border-right:1px dotted #fff;
+		border-left:1px dotted #fff;
+	}
+	
+	#tri_links {
+		width:53%;
+		float:left;
+	}
+	
+	#tri_links a:hover {
+		border:0;
+	}
+	
+	#tri_links img {
+		width:31.5%;
+		display:inline;
+		opacity: 1.0;
+		filter: alpha(opacity=100);
+	}
+	
+	#tri_links img:hover {
+		opacity: 0.85;
+		filter: alpha(opacity=85);
+	}
+	
+	#vcuera_block {
+		margin-left:1.75%;
+		margin-right:1.75%;
+	}
+	
+	@media screen and (max-width:815px) {
+		#main_events, #utilities, #quick_links_thumbs, #tri_links {
+			width:96%;
+			margin:2%;
+			border:0;			
 		}
 	}
 	
-
+	@media screen and (max-width:450px) {
+		.quick_links_section {
+			width:100%;
+		}
+		
+		#quick_links_rd {
+			border-top: 1px dotted #fff;
+			border-bottom: 1px dotted #fff;
+			border-left:0;
+			border-right:0;
+		}		
+		
+		#tri_links img {
+			width:100%;
+			margin:.5em auto .5em auto;
+		}
+	}
+	
 </style>
-
-<!-- InstanceEndEditable -->
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -159,92 +378,72 @@
 </div> <!-- end top_nav_container -->
 </div><!--end header-->
 <div id="main">
-	<div id="page_head">            
-            <div id="heading_bar">
-				<!-- InstanceBeginEditable name="heading bar" -->            	
-				<!-- InstanceEndEditable -->     	
-            </div><!--end heading_bar-->
-            
-            <div id="head_image">
-		    <!-- InstanceBeginEditable name="head image" -->            	
-                <!-- InstanceEndEditable -->            
-          	</div><!--end head image-->
-    	</div><!--end page_head-->
 	<div id="content">       
-      <div id="content_text">
       <a id="mainContent"></a>
-<!-- InstanceBeginEditable name="content" -->
-
-	<div id="photo_album">
-		
-        <ul id="slides">
+            <div id="photo_album">
+            	<ul class="rslides" id="slides">
+                    <li><img src="frontpage_images/name_change_wide.png" alt="Office of Research is now Office of Research and Innovation" /></li>
+                    <li><a href="vpr/grant_writing/index.htm"><img src="frontpage_images/grantwriting_wide.png" alt="New Investigators' Grant Writing Institute" /></a></li>
+                    <li><a href="http://www.matr.vcu.edu/" target="_blank"><img src="frontpage_images/matr_wide.jpg" alt="MATR" /></a></li>
             
-            <li><img src="frontpage_images/ovpri_announcement.png" alt="Our name has changed: The Office of Research is now The Office of Research and Innovation" /></li>
-            
-            <li><a href="events/index.htm" target="_blank"><img src="frontpage_images/bob_porter_workshops.png" alt="Grant Writing Workshops with Dr. Bob Porter on October 15 and 16" /></a></li>
-            
-            <li><a href="human_research/rams_irb.htm"><img src="frontpage_images/RAMS-IRB.gif" alt="RAMS-IRB" /></a></li>
-            
-            <li><a href="vpr/index.htm"><img src="frontpage_images/mission.png" alt="Mission Statement" /></a></li>
-            
-            <li><a href="vpr/grant_writing/index.htm"><img src="frontpage_images/grant_writing.png" alt="New Investigators' Grant Writing Institute" /></a></li>
-            
-            <li><a href="http://www.matr.vcu.edu/"><img src="frontpage_images/matr.png" alt="MATR" /></a></li>
-            
-            <li><a href="https://www.vcu.edu/vcuera/index.htm"><img src="frontpage_images/vcuera_systems-notice.png" alt="VCUera Systems Notice" /></a></li>
-            
-            <li><a href="ugresources/index.htm"><img src="frontpage_images/poster_day.png" alt="Undergraduate Poster Day and Summer Fellowship" /></a></li>
-      	</ul>
-   	</div>
+                  </ul>
+            </div>
     
     <div id="main_events">
-    
-    	<div class="nav_heading">Upcoming Office of Research and Innovation Events</div>
-        
-        	<div id="main_events_detail"><script src="http://www.ts.vcu.edu/cgi-bin/cgiwrap/getcal4.pl?SearchDate=0&amp;SearchCategory=ALL&amp;Campus=&amp;Buildings=&amp;SearchAudience=0&amp;School=Office+of+Research&amp;Dept=&amp;ongoing=0&amp;dlFlag=1&amp;areaOfFocus=&amp;IncludeCanceled=0&amp;topLimit=5" type="text/javascript"></script></div>
-  	
-    </div>   
-
       
-<!-- InstanceEndEditable -->
-      </div><!--end content_text-->
-    </div><!--end content-->    
-    <div id="right_nav">
+      <div class="nav_heading">Upcoming Events</div>
+      
+      <div id="main_events_detail"><script src="http://www.ts.vcu.edu/cgi-bin/cgiwrap/getcal4.pl?SearchDate=0&amp;SearchCategory=ALL&amp;Campus=&amp;Buildings=&amp;SearchAudience=0&amp;School=Office+of+Research&amp;Dept=&amp;ongoing=0&amp;dlFlag=1&amp;areaOfFocus=&amp;IncludeCanceled=0&amp;topLimit=5" type="text/javascript"></script></div>
+      
+      <p style="text-align:center; font-family:'Enriqueta', serif; font-size:1.25em;"><a style="color:#fff;" href="events/index.htm" target="_blank">View all events &#187;</a></p>
+      
+    </div>
     
-    	<div class="nav_heading">VP for Research and Innovation &#187;</div>
-        	<ul>
-        		<li><a href="vpr/index.htm">VP for Research and Innovation</a></li>
-                <li><a href="centers_cores/institutes.htm">Institutes and Centers</a></li>
-                <li><a href="centers_cores/core_laboratories.htm">Research Cores</a></li>
-                <li><a href="vpr/research_fund/index.htm">Research Quest Fund</a></li>
-                <li><a href="vpr/grant_writing/index.htm">Grant Writing Institute</a></li>
-                <li><a href="research_development/index.htm">Research Development</a></li>
-                <li><a href="ugresources/index.htm">Undergraduate Research</a></li>
-        		<li><a href="postdoc/index.htm">Postdoctoral Services</a></li>               
-        	</ul>
-            
-    	<div class="nav_heading">Research Quick Links &#187;</div>
-        	<ul>                               
-                                
-                <li><a href="vpr/research_compliance.htm">Research Compliance Matrix</a></li>
-                <li><a href="vcuera/index.htm">VCUeRA</a></li>
-                <li><a href="forms/index.htm">Forms</a></li>
-                <li><a href="events/index.htm">Events</a></li>
-                <li><a href="policies/index.htm">Policies</a></li>                
-                <li><a href="vpr/contactus.htm">Contact a Specific Office</a></li>
-                <li><a href="http://www.adobe.com/products/acrobat/readstep2.html" target="_blank">Download Adobe Reader</a><!-- #BeginLibraryItem "/Library/pdf_logo.lbi" --><img src="graphics/pdf_logo.gif" alt="pdf logo" style="margin-bottom:-.25em;" /><!-- #EndLibraryItem --></li>
-        	</ul>
-        
-     	<div id="helpline">
-       	  <a href="http://www.assurance.vcu.edu/reporting.html" target="_blank"><img src="images/helpline.jpg" alt="Helpline Image: To report any concern or for more information, (888)242-6022; www.vcuhelpline.com; www.ethicspoint.com" /></a>   	    
+    <div id="quick_links_thumbs">
+        <div class="quick_links_section">
+        	<h2>Centers &amp; Cores</h2>
+            	<ul class="list_no_bullets">
+                	<li><a href="centers_cores/core_laboratories.htm">Research Cores</a></li>
+                    <li><a href="centers_cores/institutes.htm">Institutes and Centers</a></li>
+             	</ul>
         </div>
-       	</div><!--end right_nav-->    
+        
+        <div class="quick_links_section" id="quick_links_rd">
+        	<h2>Research Development</h2>
+            	<ul class="list_no_bullets">
+                	<li><a href="vpr/research_fund/index.htm">Research Quest Fund</a></li>
+                    <li><a href="vpr/grant_writing/index.htm">Grant Writing Institute</a></li>
+                    <li><a href="research_development/index.htm">Research Development</a></li>
+             	</ul>
+        </div>
+        
+        <div class="quick_links_section">
+        	<h2>Scholars</h2>
+            	<ul class="list_no_bullets">
+                	<li><a href="ugresources/index.htm">Undergraduate Research</a></li>
+                    <li><a href="postdoc/index.htm">Postdoctoral Services</a></li>
+             	</ul>
+        </div>  
+    </div>
+    
+    <div id="utilities">
+    	<div id="forms"><a href="forms/index.htm" class="icon-edit">Forms</a></div>
+        <div id="policies"><a href="policies/index.htm" class="icon-docs">Policies</a></div>
+        <div id="contact"><a href="vpr/contactus.htm" class="icon-phone-1">Contact Us</a></div>
+    </div>    
+    
+    	<div id="tri_links">
+            <a href="vpr/index.htm"><img src="frontpage_images/vp_block.png" alt="VP for Research and Innovation" id="vp_block" /></a>
+            <a href="vcuera/index.htm"><img src="frontpage_images/vcuera_block.png" alt="VCUeRA" id="vcuera_block" /></a>
+            <a href="http://www.assurance.vcu.edu/reporting.html" target="_blank"><img src="frontpage_images/helpline_block.png" alt="Helpline Image" id="helpline_block" /></a> 
+		</div>
+    </div><!--end content-->        
     
    <div id="signature">
   		<ul>
     		<li><a href="http://www.vcu.edu" target="_blank">Virginia Commonwealth University</a> | <a href="http://www.research.vcu.edu/" target="_blank">Office of Research and Innovation</a></li>
             <li>800 East Leigh Street  PO Box 980568 Richmond, VA 23298</li>
-            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->10/02/2014<!-- #EndDate --> | <a href="sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
+            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->11/11/2014<!-- #EndDate --> | <a href="sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
      	</ul>
 </div><!--end #signature-->
 
@@ -260,4 +459,4 @@
 	
 </div><!--end .page-->
 </body>
-<!-- InstanceEnd --></html>
+</html>
