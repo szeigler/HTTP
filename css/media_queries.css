@@ -3,6 +3,12 @@
 
 /*--------------Licensable Tech----------------*/
 
+@media screen and (max-width:1220px) {
+	#right_nav .nav_heading {
+		font-size:1.2em;
+	}
+}
+
 @media screen and (max-width:920px) {
 	#app_advant {
 		width:90%;
