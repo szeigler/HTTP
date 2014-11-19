@@ -18,7 +18,12 @@
 
 <!--[if IE 7]>
 	<link a href="http://www.research.vcu.edu/css/IE_fixes/IE7.css" rel="stylesheet" type="text/css" media="all"/>
-	<script type="text/javascript" src="http://www.research.vcu.edu/js/iehoverfix.js"></script>
+    <style>
+    	#main #content {
+        	width:100%;
+            margin:0;
+        }
+    </style>
 <![endif]-->
 
 <meta name="google-site-verification" content="A7X8OErxdLQiwlQrJ9sEc010aJvGPFTP3NByJ2ea6kw" />
@@ -160,7 +165,7 @@
 	
 	.cal_title {
 		float:left;
-		width:100%;
+		width:98%;
 		font-size:1.1em;
 	}
 	
@@ -249,6 +254,7 @@
 		width:32%;
 		display:inline-block;
 		vertical-align:text-top;
+		*float:left;
 	}
 	
 	#quick_links_thumbs a{
@@ -318,6 +324,17 @@
 		}
 	}
 	
+	@media screen and (max-width:450px) {
+		#utilities div {	
+			width:33%;
+		}
+		
+		#main #content {
+			padding-bottom:0;
+			margin-bottom:0;
+		}
+	}
+	
 </style>
 
 <script>
@@ -330,6 +347,14 @@
   ga('send', 'pageview');
 
 </script>
+
+<!--[if IE 8]>
+    <style>
+    	.icon-edit:before {display: none;}
+		.icon-docs:before {display: none;}
+		.icon-phone-1:before {display: none;}
+    </style>
+<![endif]-->
 
 </head>
 
@@ -395,7 +420,7 @@
       
       <div id="main_events_detail"><script src="http://www.ts.vcu.edu/cgi-bin/cgiwrap/getcal4.pl?SearchDate=0&amp;SearchCategory=ALL&amp;Campus=&amp;Buildings=&amp;SearchAudience=0&amp;School=Office+of+Research&amp;Dept=&amp;ongoing=0&amp;dlFlag=1&amp;areaOfFocus=&amp;IncludeCanceled=0&amp;topLimit=5" type="text/javascript"></script></div>
       
-      <p style="text-align:center; font-family:'Enriqueta', serif; font-size:1.25em;"><a style="color:#fff;" href="events/index.htm" target="_blank">View all events &#187;</a></p>
+      <p style="text-align:center; font-family:'Enriqueta', serif; font-size:1.25em; margin-top:1em;"><a style="color:#fff;" href="events/index.htm" target="_blank">View all events &#187;</a></p>
       
     </div>
     
@@ -443,7 +468,7 @@
   		<ul>
     		<li><a href="http://www.vcu.edu" target="_blank">Virginia Commonwealth University</a> | <a href="http://www.research.vcu.edu/" target="_blank">Office of Research and Innovation</a></li>
             <li>800 East Leigh Street  PO Box 980568 Richmond, VA 23298</li>
-            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->11/11/2014<!-- #EndDate --> | <a href="sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
+            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->11/18/2014<!-- #EndDate --> | <a href="sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
      	</ul>
 </div><!--end #signature-->
 
