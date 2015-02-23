@@ -172,7 +172,7 @@
 	
 	.cal_location {display:none;}
 	
-	#main_events, #utilities, #quick_links_thumbs, #vp_block, #vcuera_block, #helpline_block, #tri_links img {
+	#main_events, #utilities, #quick_links_thumbs, #vp_block, #vcuera_block, #helpline_block, #tri_links img, #acup_section {
 		-webkit-border-radius: 10px; 
 		-moz-border-radius: 10px; 
 		-o-border-radius: 10px; 
@@ -199,7 +199,7 @@
 	}
 	
 	#utilities a {
-		padding:2em 0 2em 0;
+		padding:1.75em 0 1.75em 0;
 		display:block;
 		font-family:"Enriqueta",serif;
 		font-size:1.15em;
@@ -231,11 +231,30 @@
 		border-right:1px solid #A8A8A8;
 	}
 
+	#acup_section {
+		width:53%;
+		float:left;
+		background-color:#cc9300;
+		margin: 2% 0 0 0;
+		text-align:center;
+		padding:.8em 0 .8em 0;
+	}
+	
+	#acup_section a{
+		color:#434343;
+		font-size:1.3em;
+	}
+	
+	#acup_section a:hover {
+		border:0;
+		color:#fff;
+	}
+	
 	#quick_links_thumbs {
 		width:53%;
 		float:left;
 		background-color:#f8b800;
-		margin: 2% 0 2% 0;
+		margin: 1.8% 0 1.8% 0;
 		text-align:center;
 	}
 	
@@ -300,10 +319,14 @@
 	}
 	
 	@media screen and (max-width:815px) {
-		#main_events, #utilities, #quick_links_thumbs, #tri_links {
+		#main_events, #utilities, #quick_links_thumbs, #tri_links, #acup_section {
 			width:96%;
 			margin:2%;
 			border:0;			
+		}
+		
+		#main_events {
+			margin-bottom:1em;
 		}
 	}
 	
@@ -418,7 +441,7 @@
                   </ul>
             </div>
     
-    <div id="main_events" style="margin-bottom:5em;">
+    <div id="main_events">
       
       <div class="nav_heading">Upcoming Events</div>
       
@@ -427,6 +450,10 @@
       <p style="text-align:center; font-family:'Enriqueta', serif; font-size:1.25em; margin-top:1em;"><a style="color:#fff;" href="events/index.htm" target="_blank">View all events &#187;</a></p>
       
     </div>
+    
+    <div id="acup_section">
+		<a href="acup/policy.htm">Animal Research Policy Statement</a>
+	</div>
     
     <div id="quick_links_thumbs">
         <div class="quick_links_section">
@@ -472,7 +499,7 @@
   		<ul>
     		<li><a href="http://www.vcu.edu" target="_blank">Virginia Commonwealth University</a> | <a href="http://www.research.vcu.edu/" target="_blank">Office of Research and Innovation</a></li>
             <li>800 East Leigh Street  PO Box 980568 Richmond, VA 23298</li>
-            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->02/03/2015<!-- #EndDate --> | <a href="sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
+            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->02/23/2015<!-- #EndDate --> | <a href="sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
      	</ul>
 </div><!--end #signature-->
 
