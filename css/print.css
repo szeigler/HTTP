@@ -1,6 +1,45 @@
 @charset "utf-8";
 /* CSS Document */
-
+*,
+*:before,
+*:after {
+	color: #000 !important;
+	text-shadow: none !important;
+    background: transparent !important;
+    -webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+a, a:visited {
+	text-decoration: underline;
+}
+thead {
+	display: table-header-group;
+}
+tr, img {
+   	page-break-inside: avoid;
+}  
+img {
+    max-width: 100% !important;
+}
+.navbar {
+	display:none;
+}
+p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+}  
+h2, h3 {
+    page-break-after: avoid;
+}
+.btn > .caret, .dropup > .btn > .caret {
+    border-top-color: #000 !important;
+}  
+.label {
+    border: 1px solid #000;
+}  
+.table-bordered th, .table-bordered td {
+    border: 1px solid #ddd !important;
+}
 #skip_link {
 	display:none;
 }
