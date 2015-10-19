@@ -5,7 +5,7 @@
 */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, u, i, center, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin:0; padding:0; border:0; vertical-align: baseline; font-family:Arial, Helvetica, sans-serif; color:#000000;}
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin:0; padding:0; border:0; vertical-align: baseline; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color:#000000;}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
 blockquote, q {quotes: none;}
@@ -13,6 +13,12 @@ blockquote:before, blockquote:after,
 q:before, q:after {content: ''; content: none;}
 table {border-collapse: collapse; border-spacing: 0;}
 img {max-width:100%;}
+
+body {
+    font-size: 0.875em;
+    line-height: 1.42857143;
+    color: #333;
+}
 
 /*IDENTITY*/
 #header {
@@ -279,7 +285,7 @@ body {
 	width: 100%;
 	margin:auto;
 	padding:0;
-	font-size:1em;
+	font-size:.85em;
 	line-height: 1.6em;
 	position:relative;
 }
@@ -310,13 +316,13 @@ body {
 
 /*Headings*/
 h1 {
-	font-size:1.75em; /*18px/12px*/
+	font-size:2.15em;
 	font-family: 'Enriqueta', serif;
 	color:#ffffff;
-	padding-top:.5em; /*6px/12px*/
-	padding-bottom:.5em; /*6px/12px*/
+	padding: .75em 1.5em .75em 1.5em;
 	font-weight:normal;
 	background-color:#434343;
+	line-height:1em;
 }
 
 h2{ /*same as style1*/
