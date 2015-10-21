@@ -40,18 +40,55 @@
 	#vcuera_system_status {
 		font-size:1.4em;
 		text-align:center;
-		color:#434343;
+		
+		/* systems go
 		background-color:#e7e7e7;
+		border:1px dotted #999;
+		color:#434343;*/
+		
+		/* systems down */
+		background-color:#FF8080;
+		border:1px dotted #FF0000;
+		color:#ffffff;
+		
 		padding-top:1em;
 		padding-bottom:1em;
-		border:1px dotted #999;
 		width:70%;
 		margin:.5em auto 1em auto;
 	}
 	
-	.landing_page_header_text {
-		border-bottom:none;
+	.caps {
+		color:#fff;
+		text-transform:uppercase;
 	}
+	
+	.rams_system_buttons {
+		list-style-type:none;
+		margin-left:0;
+	}
+	
+	.rams_system_buttons li a {
+		background-color:#f8b800;
+		text-align:center;
+		padding:1em;
+		font-size:1.5em;
+		font-family:Enriqueta, serif;
+		color: #ffffff;
+		display:block;
+	}
+	
+	.rams_system_buttons li a:hover {
+		border-bottom:none;
+		background-color:#ccc;
+		text-decoration:none;
+		color:#434343;
+	}
+	
+	.rams_system_buttons li a:visited, .rams_system_buttons li a:active {
+		border:none;
+		text-decoration:none;
+	}
+	
 
 </style>
 
@@ -124,18 +161,44 @@
 
     		<div id="landing_page_content">
 
-                <p id="vcuera_system_status">System Status: All systems are currently available.</p>
-                
-                <p class="landing_page_header_text" style="margin-top:0;">Beginning August 18, 2010 access to all RAMS and VCUeRA systems (InfoEd, Click Commerce, and CORES) from any off campus location or through the VCU Wireless system will require you to use VCU's VPN (Virtual Private Network) software provided by Technology Services. <a href="http://www.ts.vcu.edu/askit/network-services/network-services/rams-vpn/" target="_blank">Click here for VCU's VPN</a>. If you have any questions or problems accessing the VPN site, contact the Help Desk at (804) 828-2227, e-mail <a href="mailto:help@vcu.edu">help@vcu.edu</a>, or visit <a href="http://www.ts.vcu.edu/helpdesk" target="_blank">www.ts.vcu.edu/helpdesk</a>.</p>
+                <p id="vcuera_system_status">
+                <!--System Status: All systems are currently available.-->
+                <span class="caps">Friday, October 23, 2015<br>
+                5:00am to 1:00pm</span><br>
+                <b>AIRS will be down for maintenance</b>.</p>
             
             <div class="level_2_nav_section">
-            	<h2>RAMS &amp; VCUeRA</h2>
+            	<h2>RAMS &amp; VCUeRA Systems</h2>
+              
+                <ul class="rams_system_buttons">
+                	<li style="margin-bottom:.4em"><a href="https://vcuera.research.vcu.edu/login.asp" target="_blank">VCUeRA Portal (InfoEd)</a></li>
+                    
+                    <li style="margin-bottom:.4em"><a href="https://spot.research.vcu.edu" target="_blank">RAMS-SPOT</a></li>
+                    
+                    <li style="margin-bottom:.4em"><a href="https://rams.research.vcu.edu" target="_blank">RAMS-Reports</a></li>
+                    
+                    <li style="margin-bottom:.4em"><a href="https://irb.research.vcu.edu/" target="_blank">RAMS-IRB</a></li>
+                    
+                    <li style="margin-bottom:.4em"><a href="https://click.research.vcu.edu/" target="_blank">IACUC (Click Commerce)</a></li>
+                    
+                    <li style="margin-bottom:.4em"><a href="https://airs.research.vcu.edu" target="_blank">AIRS</a></li>
+                    
+                    <li style="margin-bottom:.4em"><a href="https://cores.research.vcu.edu" target="_blank">CORES</a></li>
+                </ul>
+
+            </div>
+            
+            <div class="level_2_nav_section">
+            
+            	<h2>System Login</h2>
+            
+            	<p>VPN is required to access the systems.<a href="http://www.ts.vcu.edu/askit/network-services/network-services/rams-vpn/" target="_blank">Click here for VCU's VPN</a>. If you have any questions or problems, contact the <a href="http://www.ts.vcu.edu/helpit-center/" target="_blank">VCU helpIT Center</a> at (804) 828-2227 or <a href="mailto:helpIT@vcu.edu">helpIT@vcu.edu</a>.</p>
+                
+                <h2>RAMS &amp; VCUeRA</h2>
                 	<ul class="list_no_bullets">
-                	<li>&#187; <a href="https://www.vcu.edu/vcuera/overview.htm">Overview</a></li>
                     <li>&#187; <a href="../osp/rams-spot.htm">Proposals</a></li>
                     <li>&#187; <a href="https://www.vcu.edu/vcuera/lab_animals.htm">Lab Animals</a></li>
                     <li>&#187; <a href="https://www.vcu.edu/vcuera/human_subjects.htm">Human Subjects</a></li>
-                    <li>&#187; <a href="https://www.vcu.edu/vcuera/training.htm">Training</a></li>
                     <li>&#187; <a href="https://www.vcu.edu/vcuera/airs.htm">AIRS</a></li>
                     <li>&#187; <a href="https://www.vcu.edu/vcuera/cores.htm">CORES</a></li>
                 </ul>
@@ -143,41 +206,10 @@
                 <h2>Forms</h2>
                 	<ul class="list_no_bullets">
                     	<li>&#187; <a href="http://www.research.vcu.edu/forms/VCUeRA.doc">VCUeRA Account Creation Form</a><br/>
-                        <span style="font-size:.75em; line-height:1.1em;">For Investigator Access (proposal creation), E-mail <a href="mailto:erahelp@vcu.edu">erahelp@vcu.edu</a> with the subject line of: <strong>Request for VCUeRA Investigator Access</strong>.  In the e-mail, include the name and eid of the person to be granted access. List the individual in the Department/School that will be assisting the person with proposal preparation.</span></li>
+                        <span style="font-size:.85em; line-height:1.1em;">For Investigator Access (proposal creation), E-mail <a href="mailto:erahelp@vcu.edu">erahelp@vcu.edu</a> with the subject line of: <strong>Request for VCUeRA Investigator Access</strong>.  In the e-mail, include the name and eid of the person to be granted access. List the individual in the Department/School that will be assisting the person with proposal preparation.</span></li>
                 		<li>&#187; <a href="https://www.vcu.edu/vcuera/new_sponsor_form.htm" target="_blank">New Sponsor Form</a></li>
-                    
-                </ul>
-
-            </div>
-            
-            <div class="level_2_nav_section">
-            
-            <h2>System Login</h2>
-              
-                <ul class="list_no_bullets">
-                	<li style="margin-bottom:.4em">&#187; <a href="https://vcuera.research.vcu.edu/login.asp" target="_blank">VCUeRA Portal (InfoEd)</a><br/>
-                    Office of Research and Innovation award management system.</li>
-                    
-                    <li style="margin-bottom:.4em">&#187; <a href="https://spot.research.vcu.edu" target="_blank">RAMS-SPOT</a><br/>
-                    Office of Research and Innovation proposal development and management system.</li>
-                    
-                    <li style="margin-bottom:.4em">&#187; <a href="https://rams.research.vcu.edu" target="_blank">RAMS-Reports</a><br/>
-                    Office of Resarch and Innovation reporting system. Access is limited to Office of Research staff and other key university members.</li>
-                    
-                    <li style="margin-bottom:.4em">&#187; <a href="https://irb.research.vcu.edu/" target="_blank">RAMS-IRB</a><br/>
-                    Office of Research and Innovation IRB protocol development and management system.</li>
-                    
-                    <li style="margin-bottom:.4em">&#187; <a href="https://click.research.vcu.edu/" target="_blank">IACUC (Click Commerce)</a><br/>
-                    Office of Research and Innovation IACUC protocol development and management system.</li>
-                    
-                    <li style="margin-bottom:.4em">&#187; <a href="https://airs.research.vcu.edu" target="_blank">AIRS</a><br/>
-                    Office of Research and Innovation Activities and Interest Reporting System</li>
-                    
-                    <li style="margin-bottom:.4em">&#187; <a href="https://cores.research.vcu.edu" target="_blank">CORES</a><br/>
-                    Office of Research and Innovation Core Facilities billing and resource scheduling system.</li>
-                </ul>
-                
-            </div>
+                	</ul>
+			</div>
             
             </div>
 		</div><!--end landing_page__nav-->   
@@ -219,7 +251,7 @@
   		<ul>
     		<li><a href="http://www.vcu.edu" target="_blank">Virginia Commonwealth University</a> | <a href="http://www.research.vcu.edu/" target="_blank">Office of Research and Innovation</a></li>
             <li>800 East Leigh Street  PO Box 980568 Richmond, VA 23298</li>
-            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->07/28/2015<!-- #EndDate --> | <a href="../sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
+            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->10/21/2015<!-- #EndDate --> | <a href="../sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
      	</ul>
 </div><!--end #signature-->
 </div><!--end main-->
