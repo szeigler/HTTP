@@ -9,22 +9,25 @@
 	}
 }
 
-@media screen and (max-width:920px) {
-	#app_advant {
-		width:90%;
+@media screen and (max-width:1070px) {
+	#top_nav ul li a {
+		font-size:1em;
+	}
+}
+
+@media screen and (max-width:980px) {
+	
+	#vcu_research a {
+		font-size:2.25em;
+		width:64%;
 	}
 	
-	#inv_contact {
-		width:185px;
-		float:left;
+	#search {
+		width:31%;
 	}
 }
 
 @media screen and (max-width:900px) {
-	#search {
-		padding-top:.65em;
-	}
-	
 	#main #right_nav {
 		float:left;
 		margin-top:0;
@@ -36,9 +39,8 @@
 	
 	#right_nav ul:first-of-type {
 		float:left;
-		width:49%;
+		width:50%;
 		text-align:center;
-		margin-right:1%;
 		padding:0;
 	}
 	
@@ -51,31 +53,12 @@
 	#right_nav ul:last-of-type {
 		float:right;
 		width:50%;
-		text-align:center;
 		padding:0;
 	}
 	
 	#right_nav div:last-of-type {
 		float:right;
 		width:50%;
-	}
-	
-	#right_nav #helpline img {
-		width:20%;
-		float:right;
-		display:inline-block;
-		margin-top:-4em;
-		margin-right:13%;
-	}
-	
-	#right_nav #helpline {
-		padding-top:0;
-		margin-top:1em;
-	}
-	
-	#right_nav #helpline p {
-		opacity:0;
-		display:none;
 	}
 	
 	#landing_page_nav, #landing_page_content {
@@ -92,10 +75,15 @@
 	}
 	
 	#landing_page_nav h1 {
-		width:93%;
+		width:100%;
 		padding-right:0;
 		padding-bottom:.5em;
 		margin-left:1%;
+		display:block;
+	}
+	
+	#heading_bar {
+		width:100%;
 	}
 	
 	.landing_page_header_text {
@@ -120,15 +108,16 @@
 	
 	#head_image {
 		display:none;
+	}	
+}
+
+@media screen and (max-width:850px) {
+	#search {
+		padding-top:.25em;
 	}
 	
-	#main #heading_bar {
-		width:98%;
-	}
-	
-	#heading_bar h1 {
-		font-size:1.5em;
-		padding-left:5%;
+	#identity_search {
+		width:95%;
 	}
 }
 
@@ -136,6 +125,28 @@
 	
 	#irb_wpp_info, #iacuc_wpp_info {
 		margin-top:.5em;
+	}
+}
+
+@media screen and (max-width:810px) {
+	#identity_search {
+		width:99%;
+	}
+	
+	#search {
+		width:100%;
+		display:block;
+	}
+	
+	#vcu_research {
+		width:100%;
+		padding-top:0;
+		text-align:center;
+	}
+	
+	#vcu_research a {
+		width:100%;
+		margin-top:-.5em;
 	}
 }
 
@@ -163,18 +174,12 @@
 	.level_2_nav_section {
 		width:90%;
 	}
+	#heading_bar {
+		margin-top:-1em;
+	}
 }
 
 @media screen and (max-width:650px) {
-	
-	#identity_search {
-		width:95%;
-	}
-	
-	#search {
-		padding-top:0;
-	}
-	
 	#landing_page_nav {
 		width:98%;
 		margin-left:1%;
@@ -234,30 +239,10 @@
 		margin-bottom:0;
 	}
 	
-	#identity_search {
-		width:99%;
-	}
-	
-	#search {
-		width:100%;
-		display:block;
-	}
-	
-	#vcu_research {
-		width:100%;
-		padding-top:0;
-	}
-	
-	#vcu_research img {
-		margin:auto;
-		width:95%;
-	}
-	
 	#right_nav ul:first-of-type {
 		float:none;
-		width:95%;
+		width:100%;
 		text-align:left;
-		padding-left:5%;
 	}
 	
 	#right_nav div:first-of-type {
@@ -268,9 +253,8 @@
 	
 	#right_nav ul:last-of-type {
 		float:none;
-		width:95%;
+		width:100%;
 		text-align:left;
-		padding-left:5%;
 	}
 	
 	#right_nav div:last-of-type {
@@ -278,15 +262,27 @@
 		width:100%;
 	}
 	
-	#right_nav #helpline img {
-		width:100%;
-		float:none;
-		margin-right:0;
-		margin-top:-1em;
+	#landing_page_head_img {
+		display:none;
+	}
+	
+	h1 {
+		margin-top:-.19em;
 	}
 }
 
 @media screen and (max-width:403px) {	
+	#top_nav {
+		float:none;
+		width:100%;
+		margin-left:0;
+	}
+
+	#top_nav ul li a {
+		display:block;
+		width:100%;
+	}
+	
 	ul#wpp_toc li {
 		display:block;
 		text-align:left;
@@ -296,24 +292,5 @@
 	ul#wpp_toc li.spacer {
 		disply:none;
 	}
-	
-	#vcu_research img {
-		width:95%;
-	}
-}
 
-@media screen and (max-width:365px) {
-	
-	#top_nav {
-		float:none;
-		width:100%;
-		margin-left:0;
-	}
-
-	#top_nav ul li a {
-		display:block;
-		width:175px;
-		margin:auto;
-	}
-	
 }
