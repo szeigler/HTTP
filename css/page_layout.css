@@ -266,14 +266,12 @@ body {
 	text-align:center;
 }
 
-/* Main menu settings */
 #top_nav {
 	margin:auto;
 	position:relative;
-	z-index:1000; /* This makes the dropdown menus appear above the page content below */
+	z-index:1000;
 }
 
-/* Top menu items */
 #top_nav ul {
 	margin:0;
 	padding:0;
@@ -542,7 +540,7 @@ img {
   border-radius: 50%;
 }
 
-/* Links --------------------------------------------------------------------------------------------------------------------- */
+/* Links */
 a, a:link, a:visited {
 	color:#132e93;
 	text-decoration:none;
@@ -612,7 +610,7 @@ li{margin:0em 0 0em 0em;}
 	margin:0.0em;
 }
 	
-.style4 { /*gold on IRB wpp pages; headings; same as .licensable_tech*/
+.style4 { /*gold on IRB wpp pages; headings*/
 	color:#FDB813;
 	font-size:20px;
 	font-family: Arial, Helvetica, sans-serif;
@@ -721,21 +719,10 @@ h3.centers_toggle_heading {
 	border:1px solid black;
 	}
 	
-#wpp {
-	width:15%;
-	}
-	
-#section {
-	width:85%;
-	}
-	
-#date {
-	width:22%;
-	}
-	
-#history {
-	width:78%;
-	}
+#wpp {width:15%;}
+#section {width:85%;}
+#date {width:22%;}
+#history {width:78%;}
 	
 /*IACUC WPP Info*/
 #iacuc_wpp_info {
@@ -808,9 +795,7 @@ input:focus, textarea:focus {
 	padding:.75em;
 }
 
-input.parsley-error,
-select.parsley-error,
-textarea.parsley-error {
+input.parsley-error, select.parsley-error, textarea.parsley-error {
   border: 2px solid #F00;
 }
 

@@ -1,14 +1,3 @@
-
-/*---------------Media Queries-----------------*/
-
-/*--------------Licensable Tech----------------*/
-
-@media screen and (max-width:1220px) {
-	#right_nav .nav_heading {
-		font-size:1.2em;
-	}
-}
-
 @media screen and (max-width:1070px) {
 	#top_nav ul li a {
 		font-size:1em;
@@ -16,7 +5,6 @@
 }
 
 @media screen and (max-width:980px) {
-	
 	#vcu_research a {
 		font-size:2.25em;
 		width:64%;
@@ -122,7 +110,6 @@
 }
 
 @media screen and (max-width:830px) {
-	
 	#irb_wpp_info, #iacuc_wpp_info {
 		margin-top:.5em;
 	}
@@ -151,7 +138,6 @@
 }
 
 @media screen and (max-width:767px) {
-	
 	#vcu_logo_desktop {
 		display:none;
 	}
@@ -193,10 +179,6 @@
 		margin-right:0;
 	}
 	
-	.float_right {
-		float:left;
-	}
-	
 	.toggle_list .columns {
 		width:100%;
 	}
@@ -211,7 +193,6 @@
 }
 
 @media screen and (max-width:550px) {
-	
 	#top_nav ul li a{
 		font-size:1.05em;
 	}
@@ -235,10 +216,6 @@
 }
 
 @media screen and (max-width:500px) {
-	#logo_bar {
-		margin-bottom:0;
-	}
-	
 	#right_nav ul:first-of-type {
 		float:none;
 		width:100%;
@@ -292,5 +269,4 @@
 	ul#wpp_toc li.spacer {
 		disply:none;
 	}
-
 }
