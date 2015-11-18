@@ -52,6 +52,16 @@ body {
 	width:100%;
 }
 
+#identity_search {
+	width:100%;
+}
+
+#vcu_research a {
+	text-shadow:none;
+	font-size:2em;
+	text-align:left;
+}
+
 #search {
 	display:none;
 }
