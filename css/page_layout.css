@@ -207,6 +207,7 @@ body {
 	font-family:Enriqueta, serif;
 	font-size:2.75em;
 	padding-top:.15em;
+	text-shadow:1px 1px 8px #434343;
 }
 
 #vcu_research a, #vcu_research a:link, #vcu_research a:visited, #vcu_research a:hover, #vcu_research a:active, #logo_bar a, #logo_bar a:link, #logo_bar a:visited, #logo_bar a:hover, #logo_bar a:active {
@@ -280,6 +281,7 @@ body {
 	text-align:center;
 	padding-top:.05em;
 	padding-bottom:.05em;
+	margin-bottom:-.05em;
 }
 
 #top_nav ul li {
@@ -506,8 +508,8 @@ h2{ /*same as style1*/
 }
 
 h3 {
-	font-size:1.33333333em; /*16px/12px*/
-	padding-bottom:.25em;
+	font-size:1.2em;
+	padding-bottom:.1em;
 }
 
 h3.gray_heading {
@@ -557,6 +559,10 @@ a:active,a:focus {
 	text-decoration:none;
 	border-bottom:1px solid #dbd8c2;
 	}
+	
+a.no_hover:hover {
+	border-bottom:none;
+}
 
 li.spacing {
 	margin-top:1em;
@@ -751,27 +757,30 @@ h3.centers_toggle_heading {
 }
 
 /*DAR SOPs*/
-#sop_table .heading {
+.sop_table .heading {
 	background-color:#cccccc;
 	text-align:center;
 }
 
-#sop_table {
-	width:95%;
+.sop_table {
+	width:98%;
 	border-collapse:collapse;
 	margin:auto;
 	margin-bottom:1em;
 }
 	
-#sop_table a:link, #sop_table a:visited {
+.sop_table a:link, .sop_table a:visited {
 	text-decoration:underline;
+}
+
+.sop_table tr td:first-of-type {
+	width:56px;
 }
 
 /*Box around text*/
 .box_text {
 	border:1px solid #000000;
 	padding:1em;
-	margin-right:2em;
 	margin-bottom:1em;
 	}
 
@@ -841,4 +850,8 @@ p.more {margin-left:8px; margin-top:5px;}
 #skip_link a:hover, #skip_link a:focus	{
 	color:#ffffff;
 	text-decoration:none;
+}
+
+hr {
+	border:.25px solid #ccc;
 }
