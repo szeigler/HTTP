@@ -90,32 +90,6 @@
   		outline: none;
   	}
 	
-	@font-face {
-	  	font-family: 'utility';
-	  	src: url('fonts/utility.eot?78269532');
-	  	src: url('fonts/utility.eot?78269532#iefix') format('embedded-opentype'),
-		   	url('fonts/utility.woff?78269532') format('woff'),
-		   	url('fonts/utility.ttf?78269532') format('truetype'),
-		   	url('fonts/utility.svg?78269532#utility') format('svg');
-	  	font-weight: normal;
-	  	font-style: normal;
-		}
-	
-	[class^="icon-"]:before, [class*=" icon-"]:before {
-  		font-family: "utility";
-  		font-weight: normal;
-  		speak: none;
- 		margin:auto;
-  		display:block;
-  		text-align: center; 
-  		/* For safety - reset parent styles, that can break glyph codes*/
-  		font-size: 250%;
-	}
-	
-	.icon-edit:before {content: '\e800';}
-	.icon-docs:before {content: '\e801';}
-	.icon-phone-1:before {content: '\e802';}
-	
 	#content {
 		width:100%;
 		margin-left:0;
@@ -123,75 +97,109 @@
 		padding-bottom:0;
 	}	
 	
-	#homepage_left {
-		width:55%;
-		margin:2% 1% 1% 2%;
-		display:inline-block;
-	}
-	
-	#quick_links_thumbs {
+	#quick_links {
 		width:100%;
-		margin-bottom:3%;
-		background-color:#f8b800;
+		background-color:#e7e7e7;
 		text-align:center;
 		display:inline-block;
 	}
 	
-	#quick_links_thumbs ul {
+	#quick_links ul {
 		margin-left:0;
 	}
 	
-	#quick_links_thumbs h2 {
+	#quick_links h2 {
 		font-family: "Enriqueta",serif;
 		font-weight:bold;
-		color:#fff;
-		padding-bottom:0;
-		font-size:1.3em;
+		color:#000000;
+		margin-bottom:0;
+		font-size:1.65em;
 	}
 	
 	.quick_links_section {
-		width:32%;
+		width:27%;
 		display:inline-block;
 		vertical-align:text-top;
-		*float:left;
+		padding:1em .5em 1em .5em;
 	}
 	
-	#quick_links_thumbs a{
+	#quick_links a{
 		color:#434343;
-		font-size:1.1em;
+		font-size:1.3em;
 	}
 	
-	#quick_links_thumbs a:hover {
-		border:0;
-		color:#fff;
+	#quick_links li{
+		margin-top:.25em;
+	}
+	
+	#quick_links a:hover {
+		border-bottom:1px solid #f8b800;
+		color:#000;
 	}
 	
 	#quick_links_rd {
-		border-right:1px dotted #fff;
-		border-left:1px dotted #fff;
+		border-right:1px dotted #cccccc;
+		border-left:1px dotted #cccccc;
+	}
+	
+	#acup_vp {
+		width:100%;
+		display:inline-block;
+		text-align:center;		
+	}
+	
+	#acup_vp a {
+		font-family: "Enriqueta",serif;
+		width:49.8%;
+		display:inline-block;
+		color:#fff;
+		font-size:2em;
+		padding: 5em 1em 1em 1em;
+		margin:0;
+	}
+	
+	#acup_vp a:first-of-type {
+		text-align: left;
+		background:url(images/layout/dark_embroidery.png);
+		overflow:hidden;
+	}
+	
+	#acup_vp a:last-of-type {
+		text-align: right;
+		background:url(images/layout/black_lozenge.png);
+		overflow:hidden;
+	}
+	
+	#acup_vp a:hover {
+		border:0;
+		color:#000;
+		background-color:#f8b800;
+		background-image:none;
+		opacity: .8;
+    	filter: alpha(opacity=90); /* For IE8 and earlier */
 	}
 	
 	#utilities {
 		width:100%;
 		background: #ccc;
 		display:inline-block;
-		margin-bottom:3%; 
-	}
-	
-	#utilities div {
-		display:inline-block;	
-		width:33.1%;
 		text-align:center;
-		float:left;
+		margin-top:-.4em;
 	}
 	
 	#utilities a {
+		display:inline-block;	
+		width:19.65%;
+		text-align:center;
 		padding:1.75em 0 1.75em 0;
-		display:block;
 		font-family:"Enriqueta",serif;
-		font-size:1.15em;
+		font-size:1.75em;
 		font-weight:bold;
 		color:#434343;
+	}
+	
+	#utilities a span {
+		font-size:1.5em;
 	}
 	
 	#utilities a:hover {
@@ -199,157 +207,82 @@
 		border:none;
 	}
 	
-	#tri_links {
-		width:100%;
-		display:inline-block;
-	}
-	
-	#tri_links a:hover {
-		border:0;
-	}
-	
-	#tri_links img {
-		width:31.5%;
-		display:inline;
-		opacity: 1.0;
-		filter: alpha(opacity=100);
-	}
-	
-	#tri_links img:hover {
-		opacity: 0.85;
-		filter: alpha(opacity=85);
-	}
-	
-	#vcuera_block {
-		margin-left:1.75%;
-		margin-right:1.75%;
-	}
-	
-	#forms a:hover {
-		-webkit-border-radius: 10px 0px 0px 10px; 
-		-moz-border-radius: 10px 0px 0px 10px; 
-		-o-border-radius: 10px 0px 0px 10px; 
-		border-radius: 10px 0px 0px 10px;
-	}
-	
-	#contact a:hover {
-		-webkit-border-radius: 0px 10px 10px 0px; 
-		-moz-border-radius: 0px 10px 10px 0px; 
-		-o-border-radius: 0px 10px 10px 0px; 
-		border-radius: 0px 10px 10px 0px;
-	}
-	
-	#policies {
-		border-left:1px solid #A8A8A8;
-		border-right:1px solid #A8A8A8;
-	}
-	
-	#homepage_right {
-		width:39%;
-		margin:2% 2% 1% 1%;
-		display:inline-block;
-		float:right;
-	}
-	
-	#main_events {
-		width:100%;
-		background: #434343; 
-		padding-top:2em;
-		padding-bottom:1em;
+	#helpline_homepage {
 		text-align:center;
-		display:inline-block; 	
+		margin-top:1em;
 	}
 	
-	#cal_xml_feed {
-		width:100%;
-		margin:auto;
+	@media screen and (max-width:1280px) {
+		#acup_vp a {
+			font-size:1.75em;
+		}
 	}
 	
-	.nav_heading {
-		font-size:2em;
-		font-family: "Enriqueta",serif;
-		font-weight:bold;
-		color:#fff;
-		padding-bottom:0;
-	}
-	
-	#cal_xml_feed td.cal_date {
-		font-family: "Enriqueta",serif;
-		font-size:1.3em;
-		font-weight:bold;
-		color:#f8b800;
-		background-color:#434343;
-		padding-top:1em;
-	}
-	
-	#cal_xml_feed  td.cal_time {
-		font-size:.95em;
-		color:#ccc;
-		text-align:center;
-		float:left;
-		width:100%;
-	}
-	
-	.cal_title a {color:#fff;}
-	
-	.cal_title a:hover {border-bottom: 1px solid #fff;}
-	
-	.cal_title {
-		float:left;
-		width:98%;
-		font-size:1.1em;
-	}
-	
-	.cal_location {display:none;}
-	
-	#main_events, #utilities, #quick_links_thumbs, #vp_block, #vcuera_block, #helpline_block, #tri_links img, #acup_section {
-		-webkit-border-radius: 10px; 
-		-moz-border-radius: 10px; 
-		-o-border-radius: 10px; 
-		border-radius: 10px; 
-		-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); 
-		-moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); 
-		-o-box-shadow: 0 1px 4px rgba(0,0,0,.2); 
-		box-shadow: 0 1px 4px rgba(0,0,0,.2);
-		position:relative;
-	}
-
-	#acup_section {
-		width:100%;
-		background-color:#cc9300;
-		text-align:center;
-		padding:.8em 0 .8em 0;
-		display:inline-block;
-		margin-bottom:3%
-	}
-	
-	#acup_section a{
-		color:#434343;
-		font-size:1.3em;
-	}
-	
-	#acup_section a:hover {
-		border:0;
-		color:#fff;
-	}
-
-	@media screen and (max-width:950px) {
-		#homepage_right {
-			width:98%;
-			margin:1%;
-			float:none;
+	@media screen and (max-width:1090px) {
+		#acup_vp a {
+			font-size:1.58em;
 		}
 		
-		#homepage_left {
-			width:98%;
-			margin:1%;
-			float:none;
+		.quick_links_section {
+			width:31%;
 		}
 	}
 	
-	@media screen and (max-width:450px) {
+	@media screen and (max-width:985px) {
+		#acup_vp a {
+			font-size:2em;
+		}
+		
+		#quick_links a{
+			font-size:1.2em;
+		}
+		
+		#quick_links h2 {
+			font-size:1.5em;
+		}
+	}
+	
+	@media screen and (max-width:775px) {
+		#acup_vp a {
+			font-size:1.65em;
+		}
+		
+		#quick_links a{
+			font-size:1em;
+		}
+		
+		#quick_links h2 {
+			font-size:1.25em;
+		}
+		
+		#utilities a {	
+			width:25%;
+		}
+	}
+	
+	@media screen and (max-width:640px) {
+		#acup_vp a {
+			font-size:1.65em;
+			width:100%;
+			padding:1em;
+		}
+		
+		#acup_vp a:last-of-type {
+			text-align:left;
+			margin-top:-.25em;
+		}
+
 		.quick_links_section {
 			width:100%;
+			padding:.25em .5em .25em .5em;
+		}
+		
+		#quick_links a{
+			font-size:1.25em;
+		}
+		
+		#quick_links h2 {
+			font-size:1.75em;
 		}
 		
 		#quick_links_rd {
@@ -357,22 +290,26 @@
 			border-bottom: 1px dotted #fff;
 			border-left:0;
 			border-right:0;
-		}		
-		
-		#tri_links img {
-			width:100%;
-			margin:.5em auto .5em auto;
 		}
+		
+		#utilities a {
+			font-size:1.5em;
+		}
+		
+		#utilities a span {
+			font-size:1.25em;
+		}		
 	}
 	
 	@media screen and (max-width:450px) {
-		#utilities div {	
-			width:33%;
-		}
 		
 		#main #content {
 			padding-bottom:0;
 			margin-bottom:0;
+		}
+		
+		#utilities a {
+			width:50%;
 		}
 	}
 	
@@ -398,14 +335,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   ga('send', 'pageview');
 
 </script>
-
-<!--[if IE 8]>
-    <style>
-    	.icon-edit:before {display: none;}
-		.icon-docs:before {display: none;}
-		.icon-phone-1:before {display: none;}
-    </style>
-<![endif]-->
 
 </head>
 
@@ -468,8 +397,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             
                   </ul>
             </div>
-    <div id="homepage_left">
-        <div id="quick_links_thumbs">
+
+        <div id="quick_links">
             <div class="quick_links_section">
                 <h2>Centers &amp; Cores</h2>
                     <ul class="list_no_bullets">
@@ -494,40 +423,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <li><a href="postdoc/index.htm">Postdoctoral Services</a></li>
                         <li><a href="http://www.medschool.vcu.edu/media/vcu-medicine/content-assets/documents/graduate-ed/PosterBoardGuideRevised2015Fall.pdf" target="_blank">Poster Display Boards</a></li>
                     </ul>
-            </div>  
+            </div>
+      	</div>  
+            
+		<div id="acup_vp">
+            <a href="acup/policy.htm">Animal Research Policy Statement</a><a href="vpr/index.htm">Vice President for Research and Innovation</a>
+		</div>
+        <div id="utilities">
+            <a href="forms/index.htm"><span class="glyphicon glyphicon-edit"></span><br>Forms</a><a href="policies/index.htm"><span class="glyphicon glyphicon-list-alt"></span><br>Policies</a><a href="vpr/contactus.htm"><span class="glyphicon glyphicon-earphone"></span><br>Contact Us</a><a href="events/index.htm"><span class="glyphicon glyphicon-calendar"></span><br>Events</a>
         </div>
         
-        <div id="utilities">
-            <div id="forms"><a href="forms/index.htm" class="icon-edit">Forms</a></div>
-            <div id="policies"><a href="policies/index.htm" class="icon-docs">Policies</a></div>
-            <div id="contact"><a href="vpr/contactus.htm" class="icon-phone-1">Contact Us</a></div>
-        </div>    
+        <div id="helpline_homepage">
+        	<a href="http://www.assurance.vcu.edu/reporting.html" target="_blank"><img src="frontpage_images/helpline_block.png" alt="Helpline Image" /></a>
+       	</div>   
         
-		<div id="tri_links">
-        	<a href="vpr/index.htm"><img src="frontpage_images/vp_block.png" alt="VP for Research and Innovation" id="vp_block" /></a>
-          	<a href="vcuera/index.htm"><img src="frontpage_images/vcuera_block.png" alt="VCUeRA" id="vcuera_block" /></a>
-     		<a href="http://www.assurance.vcu.edu/reporting.html" target="_blank"><img src="frontpage_images/helpline_block.png" alt="Helpline Image" id="helpline_block" /></a> 
-     	</div>
-   	</div>
-    
-    <div id="homepage_right">
-    
-    	<div id="acup_section">
-			<a href="acup/policy.htm">Animal Research Policy Statement</a>
-		</div>
-        
-        <div id="main_events" style="padding-top:2.5em; padding-bottom:2.5em;">
-      
-      		<div class="nav_heading">Upcoming Events</div>
-      
-      		<div id="main_events_detail"><script src="http://www.ts.vcu.edu/cgi-bin/cgiwrap/getcal4.pl?SearchDate=0&amp;SearchCategory=ALL&amp;Campus=&amp;Buildings=&amp;SearchAudience=0&amp;School=Office+of+Research&amp;Dept=&amp;ongoing=0&amp;dlFlag=1&amp;areaOfFocus=&amp;IncludeCanceled=0&amp;topLimit=5" type="text/javascript"></script></div>
-      
-      		<p style="text-align:center; font-family:'Enriqueta', serif; font-size:1.25em; margin-top:1em;"><a style="color:#fff;" href="events/index.htm" target="_blank">View all events &#187;</a></p>
-      
-    	</div>
-        
-   	</div>
-
     </div><!--end content-->        
     
    <div id="signature">
