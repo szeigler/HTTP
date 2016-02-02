@@ -5,6 +5,14 @@
 }
 
 @media screen and (max-width:980px) {
+	#vcu_logo_vcu {
+		width:84%;
+	}
+	
+	#vcu_logo_real {
+		width:15%;
+	}
+	
 	#vcu_research a {
 		font-size:2.25em;
 		width:64%;
