@@ -687,7 +687,7 @@ tr.alt, tr.cal_head {
 	}
 
 /*Accordian Styles*/
-h3.centers_toggle_heading {
+.centers_toggle_heading {
 	padding:.75em;
 	background-color:#ccc;
 	cursor:pointer;
