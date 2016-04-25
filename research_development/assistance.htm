@@ -192,38 +192,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <p><label for="email_general">Email:<span class="note_to_client">*</span></label><br/>
                 <input name="email_general" type="email" id="email_general" size="30" data-parsley-trigger="focusout" required /></p>
                 
-                <p>Early Stage Investigator<span class="note_to_client">*</span>:<br/>
-                <input type="radio" name="yes" value="yes" />Yes<br/>
-                <input type="radio" name="no" value="no" />No</p>
+                <fieldset>
+                <legend>Early Stage Investigator<span class="note_to_client">*</span>:</legend>
+                <p><input type="radio" name="yes" id="inv1" value="yes" /><label for="inv1">Yes</label><br/>
+                <input type="radio" name="no" id="inv2" value="no" /><label for="inv2">No</label></p>
+                </fieldset>
                 
-                <p class="no_margin"><strong>Services Requested (check all that apply)</strong></p>
+                <fieldset>
+                <legend><strong>Services Requested (check all that apply)</strong></legend>
        	  <ul class="list_no_bullets">
-            	<li><input type="checkbox" name="services_requested" value="Discuss ideas, strategy, research design" />Discuss ideas, strategy, research design</li>
-                <li><input type="checkbox" name="services_requested" value="Assist with interpreting funding opportunity, determining responsiveness to funding opportunity" />Assist with interpreting funding opportunity, determining responsiveness to funding opportunity</li>
-                <li><input type="checkbox" name="services_requested" value="Discuss eligibility to apply for selected funding opportunities." />Discuss eligibility to apply for selected funding opportunities.</li>
-                <li><input type="checkbox" name="services_requested" value="Help with identifying collaborators, convening multi-disciplinary team" />Help with identifying collaborators, convening multi-disciplinary team</li>
-                <li><input type="checkbox" name="services_requested" value="Provide input on concept paper to funding agency" />Provide input on concept paper to funding agency</li>
-                <li><input type="checkbox" name="services_requested" value="Assist with contacting, working with funding agency" />Assist with contacting, working with funding agency</li>
-                <li><input type="checkbox" name="services_requested" value="Assist with developing a workplan" />Assist with developing a workplan</li>
-                <li><input type="checkbox" name="services_requested" value="Discuss timeline" />Discuss timeline</li>
-                <li><input type="checkbox" name="services_requested" value="Provide input on specific aims, goals/objectives, project summary, significance" />Provide input on specific aims, goals/objectives, project summary, significance</li>
-                <li><input type="checkbox" name="services_requested" value="Review, edit proposal narrative" />Review, edit proposal narrative</li>
-                <li><input type="checkbox" name="services_requested" value="Craft, edit letters of support" />Craft, edit letters of support</li>
-                <li><input type="checkbox" name="services_requested" value="Assist with responses to primary review criteria" />Assist with responses to primary review criteria</li>
-                <li><input type="checkbox" name="services_requested" value="Help with conceptualizing budget, review budget" />Help with conceptualizing budget, review budget</li>
-                <li><input type="checkbox" name="services_requested" value="Help interpreting reviewers’ comments, crafting response" />Help interpreting reviewers’ comments, crafting response</li>
-                <li><input type="checkbox" name="services_requested" value="Discuss submission process, planning to submit" />Discuss submission process, planning to submit</li>
-                <li><input type="checkbox" name="services_requested" value="Not sure" />Not sure</li>
-                <li><input type="checkbox" name="services_requested" value="Other (please specify)" />Other (please specify)<br/>
+            	<li><input type="checkbox" name="services_requested" id="chbx1" value="Discuss ideas, strategy, research design" /><label for="chbx1">Discuss ideas, strategy, research design</label></li>
+                <li><input type="checkbox" name="services_requested" id="chbx2" value="Assist with interpreting funding opportunity, determining responsiveness to funding opportunity" /><label for="chbx2">Assist with interpreting funding opportunity, determining responsiveness to funding opportunity</label></li>
+                <li><input type="checkbox" name="services_requested" id="chbx3" value="Discuss eligibility to apply for selected funding opportunities." /><label for="chbx3">Discuss eligibility to apply for selected funding opportunities.</label></li>
+                <li><input type="checkbox" name="services_requested" id="chbx4" value="Help with identifying collaborators, convening multi-disciplinary team" /><label for="chbx4">Help with identifying collaborators, convening multi-disciplinary team</label></li>
+                <li><input type="checkbox" name="services_requested" id="chbx5" value="Provide input on concept paper to funding agency" /><label for="chbx5">Provide input on concept paper to funding agency</label></li>
+                <li><input type="checkbox" name="services_requested" id="chbx6" value="Assist with contacting, working with funding agency" /><label for="chbx6">Assist with contacting, working with funding agency</label></li>
+                <li><input type="checkbox" name="services_requested" id="chbx7" value="Assist with developing a workplan" /><label for="chbx7">Assist with developing a workplan</label></li>
+                <li><input type="checkbox" name="services_requested" id="chbx8" value="Discuss timeline" /><label for="chbx8">Discuss timeline</label></li>
+                <li><input type="checkbox" name="services_requested" id="chbx9" value="Provide input on specific aims, goals/objectives, project summary, significance" /><label for="chbx9">Provide input on specific aims, goals/objectives, project summary, significance</label></li>
+                <li><input type="checkbox" name="services_requested" id="chbx10" value="Review, edit proposal narrative" /><label for="chbx10">Review, edit proposal narrative</label></li>
+                <li><input type="checkbox" name="services_requested" id="chbx11" value="Craft, edit letters of support" /><label for="chbx11">Craft, edit letters of support</label></li>
+                <li><input type="checkbox" name="services_requested" id="chbx12" value="Assist with responses to primary review criteria" /><label for="chbx12">Assist with responses to primary review criteria</label></li>
+                <li><input type="checkbox" name="services_requested" id="chbx13" value="Help with conceptualizing budget, review budget" /><label for="chbx13">Help with conceptualizing budget, review budget</label></li>
+                <li><input type="checkbox" name="services_requested" id="chbx14" value="Help interpreting reviewers’ comments, crafting response" /><label for="chbx14">Help interpreting reviewers’ comments, crafting response</label></li>
+                <li><input type="checkbox" name="services_requested" id="chbx15" value="Discuss submission process, planning to submit" /><label for="chbx15">Discuss submission process, planning to submit</label></li>
+                <li><input type="checkbox" name="services_requested" id="chbx16" value="Not sure" /><label for="chbx16">Not sure</label></li>
+                <li><input type="checkbox" name="services_requested" id="chbx17" value="Other (please specify)" /><label for="chbx17">Other (please specify)</label><br/>
                 <input name="other_general" type="text" id="other_general" size="30" /></li>
           	</ul>
+            </fieldset>
         
           <p><label for="general_description"><strong>Provide a brief, lay-language description of your research areas.</strong></label><br />
           <textarea name="general_description" id="general_description" cols="30" rows="10"></textarea></p>
           
-          <p><strong>Are you working on a specific proposal?:</strong><br/>
-          <input type="radio" name="yes" value="yes" />Yes<br/>
-          <input type="radio" name="no" value="no" />No</p>
+          <fieldset>
+          <legend><strong>Are you working on a specific proposal?:</strong></legend>
+          <p><input type="radio" name="yes" id="specprop1" value="yes" /><label for="specprop1">Yes</label><br/>
+          <input type="radio" name="no" id="specprop2" value="no" /><label for="specprop2">No</label></p>
+          </fieldset>
           
           <p><label for="solicitation"><strong>If yes, link to the solicitation.</strong></label><br />
           <input name="solicitation" id="solicitation" type="text" size="30"/></p>
@@ -234,9 +240,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <p><label for="meet_time"><strong>What are the best days of the week and times for you to meet?</strong></label><br />
           <textarea name="meet_time" id="meet_time" cols="30" rows="10"></textarea></p>
           
-          <p><strong>Where do you prefer to meet?</strong><br/>
-                <input type="radio" name="monroe_park" value="Monroe Park" />Monroe Park<br/>
-                <input type="radio" name="mcv" value="MCV" />MCV</p>
+          <fieldset>
+          <legend><strong>Where do you prefer to meet?</strong></legend>
+                <p><input type="radio" name="monroe_park" id="meet1" value="Monroe Park" /><label for="meet1">Monroe Park</label><br/>
+                <input type="radio" name="mcv" id="meet2" value="MCV" /><label for="meet2">MCV</label></p>
+         	</fieldset>
                 
           <p><label for="other_info"><strong>Other information, comments that may be helpful in preparing for this meeting.</strong></label><br />
           <textarea name="other_info" id="other_info" cols="30" rows="10"></textarea></p>
@@ -284,9 +292,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <p><label for="phone">Phone:</label><br/>
                 <input name="phone" type="text" id="phone" size="30" /></p>
                 
-                <p>I am requesting<span class="note_to_client">*</span>:<br/>
-                <input type="radio" name="request" value="An individual appointment" />An individual appointment<br>
-                <input type="radio" name="request" value="A training session for my group" />A training session for my group.</p>
+                <fieldset>
+                <legend>I am requesting<span class="note_to_client">*</span>:</legend>
+                <p><input type="radio" name="request" id="req1" value="An individual appointment" /><label for="req1">An individual appointment</label><br>
+                <input type="radio" name="request" id="req2" value="A training session for my group" /><label for="req2">A training session for my group.</label></p>
+                </fieldset>
         
           <p><label for="idividual_description"><strong>For individual appointments</strong>: Provide a brief, lay-language description of your research for which you are seeking funding (if applicable). Include any additional requests about the appointment, such as preferred date and time.</label><br />
           <textarea name="idividual_description" id="idividual_description" cols="30" rows="10"></textarea></p>
@@ -303,7 +313,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </form>
         <p><span class="note_to_client">*</span>Required</p>
      	
-        <p>Be sure to <a href="pivot_account_setup.pdf" target="_blank">create a Pivot account</a> before your grant search appointment or group training session.</p>
+        <p>Be sure to <a href="pivot_account_setup.pdf" target="_blank">create a Pivot account<!-- #BeginLibraryItem "/Library/pdf_logo.lbi" --><img src="../graphics/pdf_logo.gif" alt="pdf logo" class="pdf_logo" /><!-- #EndLibraryItem --></a> before your grant search appointment or group training session.</p>
 
 		</div>
         
@@ -318,7 +328,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <h3 class="centers_toggle_heading">Boilerplate Language Request <span class="expand glyphicon glyphicon-chevron-down"></span><span class="collapse glyphicon glyphicon-chevron-up"></span></h3>
     	<div class="toggle_list">
         
-        	<p>Click <a href="boilerplate.htm" target="_blank">here</a> to request boilerplate language.</p>
+        	<p><a href="boilerplate.htm" target="_blank">Click here to request boilerplate language</a>.</p>
 
         </div>
 
@@ -357,7 +367,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   		<ul>
     		<li><a href="http://www.vcu.edu" target="_blank">Virginia Commonwealth University</a> | <a href="http://www.research.vcu.edu/" target="_blank">Office of Research and Innovation</a></li>
             <li>800 East Leigh Street  PO Box 980568 Richmond, VA 23298</li>
-            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->03/24/2016<!-- #EndDate --> | <a href="../sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
+            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->04/20/2016<!-- #EndDate --> | <a href="../sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
      	</ul>
 </footer><!--end #signature-->
 
