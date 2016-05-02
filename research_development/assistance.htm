@@ -163,91 +163,89 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         	
 		<div class="toggle_list">
             
-            <form action="http://www.vcu.edu/cgi-bin/mailto" method="post" data-parsley-validate>
+            <form method="post" action="http://myforms.vcu.edu/posts" data-parsley-validate>
+            	
+                <input type="hidden" name="HTTP_REFERER" value="http://www.research.vcu.edu/research_development/assistance.htm#generalservices" />
+                <input type="hidden" name="timestamp" value="on">
 
-			  <span style="display:none"><textarea name="{comment}"></textarea></span>
-                        
-                        <input type="hidden" name="to" value="acasebol@vcu.edu" />
-                        
-                        <input type="hidden" name="from" value="General Service Request" />
-                        
-                        <input type="hidden" name="subject" value="General Service Request" />
-                        
-                		<input type="hidden" name="redirect" value="http://www.research.vcu.edu/thankyou.htm">
+			  		<span style="display: none">
+    					<label for="comment">Comment</label>
+    					<textarea name="{comment}" id="comment"></textarea>
+ 					 </span>
             
             <div id="general_form">
 
 				<p><label for="name_general">Name:<span class="note_to_client">*</span></label><br/>
-                <input name="name_general" type="text" id="name_general" size="30" data-parsley-trigger="focusout" required /></p>
+                <input title="Name" name="name_general" type="text" id="name_general" size="30" data-parsley-trigger="focusout" required /></p>
                 
                 <p><label for="title_general">Title/Rank:<span class="note_to_client">*</span></label><br/>
-                <input name="title_general" type="text" id="title_general" size="30" data-parsley-trigger="focusout" required /></p>
+                <input title="Title/Rank" name="title_general" type="text" id="title_general" size="30" data-parsley-trigger="focusout" required /></p>
                 
                 <p><label for="dept_general">Department:<span class="note_to_client">*</span></label><br/>
-                <input name="dept_general" type="text" id="dept_general" size="30" data-parsley-trigger="focusout" required /></p>
+                <input title="Department" name="dept_general" type="text" id="dept_general" size="30" data-parsley-trigger="focusout" required /></p>
                 
                 <p><label for="school_general">School:<span class="note_to_client">*</span></label><br/>
-                <input name="school_general" type="text" id="school_general" size="30" data-parsley-trigger="focusout" required /></p>
+                <input title="School" name="school_general" type="text" id="school_general" size="30" data-parsley-trigger="focusout" required /></p>
                 
                 <p><label for="email_general">Email:<span class="note_to_client">*</span></label><br/>
-                <input name="email_general" type="email" id="email_general" size="30" data-parsley-trigger="focusout" required /></p>
+                <input title="Email" name="email_general" type="email" id="email_general" size="30" data-parsley-trigger="focusout" required /></p>
                 
                 <fieldset>
                 <legend>Early Stage Investigator<span class="note_to_client">*</span>:</legend>
-                <p><input type="radio" name="yes" id="inv1" value="yes" /><label for="inv1">Yes</label><br/>
-                <input type="radio" name="no" id="inv2" value="no" /><label for="inv2">No</label></p>
+                <p><input title="yes" type="radio" name="early_stage_investigator" id="inv1" value="yes" /><label for="inv1">Yes</label><br/>
+                <input title="no" type="radio" name="early_stage_investigator" id="inv2" value="no" /><label for="inv2">No</label></p>
                 </fieldset>
-                
+  
                 <fieldset>
                 <legend><strong>Services Requested (check all that apply)</strong></legend>
        	  <ul class="list_no_bullets">
-            	<li><input type="checkbox" name="services_requested" id="chbx1" value="Discuss ideas, strategy, research design" /><label for="chbx1">Discuss ideas, strategy, research design</label></li>
-                <li><input type="checkbox" name="services_requested" id="chbx2" value="Assist with interpreting funding opportunity, determining responsiveness to funding opportunity" /><label for="chbx2">Assist with interpreting funding opportunity, determining responsiveness to funding opportunity</label></li>
-                <li><input type="checkbox" name="services_requested" id="chbx3" value="Discuss eligibility to apply for selected funding opportunities." /><label for="chbx3">Discuss eligibility to apply for selected funding opportunities.</label></li>
-                <li><input type="checkbox" name="services_requested" id="chbx4" value="Help with identifying collaborators, convening multi-disciplinary team" /><label for="chbx4">Help with identifying collaborators, convening multi-disciplinary team</label></li>
-                <li><input type="checkbox" name="services_requested" id="chbx5" value="Provide input on concept paper to funding agency" /><label for="chbx5">Provide input on concept paper to funding agency</label></li>
-                <li><input type="checkbox" name="services_requested" id="chbx6" value="Assist with contacting, working with funding agency" /><label for="chbx6">Assist with contacting, working with funding agency</label></li>
-                <li><input type="checkbox" name="services_requested" id="chbx7" value="Assist with developing a workplan" /><label for="chbx7">Assist with developing a workplan</label></li>
-                <li><input type="checkbox" name="services_requested" id="chbx8" value="Discuss timeline" /><label for="chbx8">Discuss timeline</label></li>
-                <li><input type="checkbox" name="services_requested" id="chbx9" value="Provide input on specific aims, goals/objectives, project summary, significance" /><label for="chbx9">Provide input on specific aims, goals/objectives, project summary, significance</label></li>
-                <li><input type="checkbox" name="services_requested" id="chbx10" value="Review, edit proposal narrative" /><label for="chbx10">Review, edit proposal narrative</label></li>
-                <li><input type="checkbox" name="services_requested" id="chbx11" value="Craft, edit letters of support" /><label for="chbx11">Craft, edit letters of support</label></li>
-                <li><input type="checkbox" name="services_requested" id="chbx12" value="Assist with responses to primary review criteria" /><label for="chbx12">Assist with responses to primary review criteria</label></li>
-                <li><input type="checkbox" name="services_requested" id="chbx13" value="Help with conceptualizing budget, review budget" /><label for="chbx13">Help with conceptualizing budget, review budget</label></li>
-                <li><input type="checkbox" name="services_requested" id="chbx14" value="Help interpreting reviewers’ comments, crafting response" /><label for="chbx14">Help interpreting reviewers’ comments, crafting response</label></li>
-                <li><input type="checkbox" name="services_requested" id="chbx15" value="Discuss submission process, planning to submit" /><label for="chbx15">Discuss submission process, planning to submit</label></li>
-                <li><input type="checkbox" name="services_requested" id="chbx16" value="Not sure" /><label for="chbx16">Not sure</label></li>
-                <li><input type="checkbox" name="services_requested" id="chbx17" value="Other (please specify)" /><label for="chbx17">Other (please specify)</label><br/>
-                <input name="other_general" type="text" id="other_general" size="30" /></li>
+            	<li><input title="Discuss ideas, strategy, research design" type="checkbox" name="services_requested1" id="chbx1" value="Discuss ideas, strategy, research design" /><label for="chbx1">Discuss ideas, strategy, research design</label></li>
+                <li><input title="Assist with interpreting funding opportunity, determining responsiveness to funding opportunity" type="checkbox" name="services_requested1" id="chbx2" value="Assist with interpreting funding opportunity, determining responsiveness to funding opportunity" /><label for="chbx2">Assist with interpreting funding opportunity, determining responsiveness to funding opportunity</label></li>
+                <li><input title="Discuss eligibility to apply for selected funding opportunities." type="checkbox" name="services_requested3" id="chbx3" value="Discuss eligibility to apply for selected funding opportunities." /><label for="chbx3">Discuss eligibility to apply for selected funding opportunities.</label></li>
+                <li><input title="Help with identifying collaborators, convening multi-disciplinary team" type="checkbox" name="services_requested4" id="chbx4" value="Help with identifying collaborators, convening multi-disciplinary team" /><label for="chbx4">Help with identifying collaborators, convening multi-disciplinary team</label></li>
+                <li><input title="Provide input on concept paper to funding agency" type="checkbox" name="services_requested5" id="chbx5" value="Provide input on concept paper to funding agency" /><label for="chbx5">Provide input on concept paper to funding agency</label></li>
+                <li><input title="Assist with contacting, working with funding agency" type="checkbox" name="services_requested6" id="chbx6" value="Assist with contacting, working with funding agency" /><label for="chbx6">Assist with contacting, working with funding agency</label></li>
+                <li><input title="Assist with developing a workplan" type="checkbox" name="services_requested7" id="chbx7" value="Assist with developing a workplan" /><label for="chbx7">Assist with developing a workplan</label></li>
+                <li><input title="Discuss timeline" type="checkbox" name="services_requested8" id="chbx8" value="Discuss timeline" /><label for="chbx8">Discuss timeline</label></li>
+                <li><input title="Provide input on specific aims, goals/objectives, project summary, significance" type="checkbox" name="services_requested9" id="chbx9" value="Provide input on specific aims, goals/objectives, project summary, significance" /><label for="chbx9">Provide input on specific aims, goals/objectives, project summary, significance</label></li>
+                <li><input title="Review, edit proposal narrative" type="checkbox" name="services_requested10" id="chbx10" value="Review, edit proposal narrative" /><label for="chbx10">Review, edit proposal narrative</label></li>
+                <li><input title="Craft, edit letters of support" type="checkbox" name="services_requested11" id="chbx11" value="Craft, edit letters of support" /><label for="chbx11">Craft, edit letters of support</label></li>
+                <li><input title="Assist with responses to primary review criteria" type="checkbox" name="services_requested12" id="chbx12" value="Assist with responses to primary review criteria" /><label for="chbx12">Assist with responses to primary review criteria</label></li>
+                <li><input title="Help with conceptualizing budget, review budget" type="checkbox" name="services_requested13" id="chbx13" value="Help with conceptualizing budget, review budget" /><label for="chbx13">Help with conceptualizing budget, review budget</label></li>
+                <li><input title="Help interpreting reviewers’ comments, crafting response" type="checkbox" name="services_requested14" id="chbx14" value="Help interpreting reviewers’ comments, crafting response" /><label for="chbx14">Help interpreting reviewers’ comments, crafting response</label></li>
+                <li><input title="Discuss submission process, planning to submit" type="checkbox" name="services_requested15" id="chbx15" value="Discuss submission process, planning to submit" /><label for="chbx15">Discuss submission process, planning to submit</label></li>
+                <li><input title="Not sure" type="checkbox" name="services_requested16" id="chbx16" value="Not sure" /><label for="chbx16">Not sure</label></li>
+                <li><input title="Other (please specify)" type="checkbox" name="services_requested17" id="chbx17" value="Other (please specify)" /><label for="chbx17">Other (please specify)</label><br/>
+                <input name="other_general" type="text" id="other_general" size="30" /><label for="other_general" style="display:none">Other (please specify)</label></li>
           	</ul>
             </fieldset>
         
           <p><label for="general_description"><strong>Provide a brief, lay-language description of your research areas.</strong></label><br />
-          <textarea name="general_description" id="general_description" cols="30" rows="10"></textarea></p>
+          <textarea title="General Description" name="general_description" id="general_description" cols="30" rows="10"></textarea></p>
           
           <fieldset>
           <legend><strong>Are you working on a specific proposal?:</strong></legend>
-          <p><input type="radio" name="yes" id="specprop1" value="yes" /><label for="specprop1">Yes</label><br/>
-          <input type="radio" name="no" id="specprop2" value="no" /><label for="specprop2">No</label></p>
+          <p><input title="yes" type="radio" name="specific_proposal" id="specprop1" value="yes" /><label for="specprop1">Yes</label><br/>
+          <input title="no" type="radio" name="specific_proposal" id="specprop2" value="no" /><label for="specprop2">No</label></p>
           </fieldset>
           
           <p><label for="solicitation"><strong>If yes, link to the solicitation.</strong></label><br />
-          <input name="solicitation" id="solicitation" type="text" size="30"/></p>
+          <input title="Solicitation" name="solicitation" id="solicitation" type="text" size="30"/></p>
           
           <p><label for="deadline"><strong>If yes, what is the submission deadline?</strong></label><br />
-          <input name="deadline" id="deadline" type="text" size="30" /></p>
+          <input title="Deadline" name="deadline" id="deadline" type="text" size="30" /></p>
           
           <p><label for="meet_time"><strong>What are the best days of the week and times for you to meet?</strong></label><br />
-          <textarea name="meet_time" id="meet_time" cols="30" rows="10"></textarea></p>
+          <textarea title="Meet Time" name="meet_time" id="meet_time" cols="30" rows="10"></textarea></p>
           
           <fieldset>
           <legend><strong>Where do you prefer to meet?</strong></legend>
-                <p><input type="radio" name="monroe_park" id="meet1" value="Monroe Park" /><label for="meet1">Monroe Park</label><br/>
-                <input type="radio" name="mcv" id="meet2" value="MCV" /><label for="meet2">MCV</label></p>
+                <p><input title="Monroe Park" type="radio" name="meet" id="meet1" value="Monroe Park" /><label for="meet1">Monroe Park</label><br/>
+                <input title="MCV" type="radio" name="meet" id="meet2" value="MCV" /><label for="meet2">MCV</label></p>
          	</fieldset>
                 
           <p><label for="other_info"><strong>Other information, comments that may be helpful in preparing for this meeting.</strong></label><br />
-          <textarea name="other_info" id="other_info" cols="30" rows="10"></textarea></p>
+          <textarea title="Other Info" name="other_info" id="other_info" cols="30" rows="10"></textarea></p>
 
 			<div id="form_buttons_general">
             	<button type="submit">Submit</button>
@@ -263,46 +261,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         	
 		<div class="toggle_list">
             
-            <form action="http://www.vcu.edu/cgi-bin/mailto" method="post" data-parsley-validate>
+            <form method="post" action="http://myforms.vcu.edu/posts" data-parsley-validate>
+            	
+                <input type="hidden" name="HTTP_REFERER" value="http://www.research.vcu.edu/research_development/assistance.htm#training" />
+                <input type="hidden" name="timestamp" value="on">
 
-						<span style="display:none"><textarea name="{comment}"></textarea></span>
-                        
-                        <input type="hidden" name="to" value="acasebol@vcu.edu" />
-                        
-                        <input type="hidden" name="from" value="Grant Search Training Request" />
-                        
-                        <input type="hidden" name="subject" value="Grant Search Training Request" />
-                        
-                		<input type="hidden" name="redirect" value="http://www.research.vcu.edu/thankyou.htm">
+			  		<span style="display: none">
+    					<label for="comment2">Comment</label>
+    					<textarea name="{comment}" id="comment2"></textarea>
+ 					 </span>
             
             <div id="training_form">
 
 				<p><label for="name">Name:<span class="note_to_client">*</span></label><br/>
-                <input name="name" type="text" id="name" size="30" data-parsley-trigger="focusout" required /></p>
+                <input title="Name" name="name" type="text" id="name" size="30" data-parsley-trigger="focusout" required /></p>
                 
                 <p><label for="title">Title:<span class="note_to_client">*</span></label><br/>
-                <input name="title" type="text" id="title" size="30" data-parsley-trigger="focusout" required /></p>
+                <input title="Title" name="title" type="text" id="title" size="30" data-parsley-trigger="focusout" required /></p>
                 
                 <p><label for="dept">Department:<span class="note_to_client">*</span></label><br/>
-                <input name="dept" type="text" id="dept" size="30" data-parsley-trigger="focusout" required /></p>
+                <input title="Department" name="dept" type="text" id="dept" size="30" data-parsley-trigger="focusout" required /></p>
                 
                 <p><label for="email">Email:<span class="note_to_client">*</span></label><br/>
-                <input name="email" type="email" id="email" size="30" data-parsley-trigger="focusout" required /></p>
+                <input title="Email" name="email" type="email" id="email" size="30" data-parsley-trigger="focusout" required /></p>
                 
                 <p><label for="phone">Phone:</label><br/>
-                <input name="phone" type="text" id="phone" size="30" /></p>
+                <input title="Phone" name="phone" type="text" id="phone" size="30" /></p>
                 
                 <fieldset>
                 <legend>I am requesting<span class="note_to_client">*</span>:</legend>
-                <p><input type="radio" name="request" id="req1" value="An individual appointment" /><label for="req1">An individual appointment</label><br>
-                <input type="radio" name="request" id="req2" value="A training session for my group" /><label for="req2">A training session for my group.</label></p>
+                <p><input title="Individual appointment" type="radio" name="request" id="req1" value="An individual appointment" /><label for="req1">An individual appointment</label><br>
+                <input title="Group training session" type="radio" name="request" id="req2" value="A training session for my group" /><label for="req2">A training session for my group.</label></p>
                 </fieldset>
         
-          <p><label for="idividual_description"><strong>For individual appointments</strong>: Provide a brief, lay-language description of your research for which you are seeking funding (if applicable). Include any additional requests about the appointment, such as preferred date and time.</label><br />
-          <textarea name="idividual_description" id="idividual_description" cols="30" rows="10"></textarea></p>
+          <p><label title="Individual Appt Description" for="individual_description"><strong>For individual appointments</strong>: Provide a brief, lay-language description of your research for which you are seeking funding (if applicable). Include any additional requests about the appointment, such as preferred date and time.</label><br />
+          <textarea title="Individual Appt Description" name="individual_description" id="individual_description" cols="30" rows="10"></textarea></p>
           
-          <p><label for="group_description"><strong>For group training</strong>: Provide a brief description of the group who will be targeted for training (if applicable). Include any additional requests about the session, such as preferred date and time.</label><br />
-          <textarea name="group_description" id="group_description" cols="30" rows="10"></textarea></p>
+          <p><label title="Group Training Description" for="group_description"><strong>For group training</strong>: Provide a brief description of the group who will be targeted for training (if applicable). Include any additional requests about the session, such as preferred date and time.</label><br />
+          <textarea title="Group Training Description" name="group_description" id="group_description" cols="30" rows="10"></textarea></p>
 
 			<div id="form_buttons">
             	<button type="submit">Submit</button>
@@ -367,7 +363,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   		<ul>
     		<li><a href="http://www.vcu.edu" target="_blank">Virginia Commonwealth University</a> | <a href="http://www.research.vcu.edu/" target="_blank">Office of Research and Innovation</a></li>
             <li>800 East Leigh Street  PO Box 980568 Richmond, VA 23298</li>
-            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->04/20/2016<!-- #EndDate --> | <a href="../sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
+            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->05/02/2016<!-- #EndDate --> | <a href="../sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
      	</ul>
 </footer><!--end #signature-->
 

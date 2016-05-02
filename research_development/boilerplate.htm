@@ -141,17 +141,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
         <p>The Office of Research and Innovation will provide boilerplate language for your grant proposals. Complete and submit the form below <strong>no less than 3 weeks prior to your application submission deadline. Late requests may not be filled</strong>. Contact Ann Nichols-Casebolt at <a href="mailto:acasebol@vcu.edu">acasebol@vcu.edu</a> for additional information and assistance.</p>
         
-  	<form action="http://www.vcu.edu/cgi-bin/mailto" method="post" data-parsley-validate>
+  	<form method="post" action="http://myforms.vcu.edu/posts" data-parsley-validate>
+            	
+                <input type="hidden" name="HTTP_REFERER" value="http://www.research.vcu.edu/research_development/boilerplate.htm" />
+                <input type="hidden" name="timestamp" value="on">
 
-						<span style="display:none"><textarea name="{comment}"></textarea></span>
-                        
-                        <input type="hidden" name="to" value="acasebol@vcu.edu" />
-                        
-                        <input type="hidden" name="from" value="Boilerplate Language Request" />
-                        
-                        <input type="hidden" name="subject" value="Boilerplate Language Request" />
-                        
-                		<input type="hidden" name="redirect" value="http://www.research.vcu.edu/thankyou.htm" />
+			  		<span style="display: none">
+    					<label for="comment">Comment</label>
+    					<textarea name="{comment}" id="comment"></textarea>
+ 					 </span>
         
         <div id="boilerplate_form">
 
@@ -292,7 +290,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   		<ul>
     		<li><a href="http://www.vcu.edu" target="_blank">Virginia Commonwealth University</a> | <a href="http://www.research.vcu.edu/" target="_blank">Office of Research and Innovation</a></li>
             <li>800 East Leigh Street  PO Box 980568 Richmond, VA 23298</li>
-            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->03/28/2016<!-- #EndDate --> | <a href="../sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
+            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->05/02/2016<!-- #EndDate --> | <a href="../sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
      	</ul>
 </footer><!--end #signature-->
 
