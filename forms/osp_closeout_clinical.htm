@@ -147,19 +147,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <p id="breadcrumbs"><a href="index.htm">Forms</a> &raquo; E-Closeout Form - Clinical Trial</p>
 
-<form action="http://www.vcu.edu/cgi-bin/mailto" method="post" data-parsley-validate>
-						
-						<span style="display:none"><textarea name="{comment}"></textarea></span>
+<form method="post" action="http://myforms.vcu.edu/posts" data-parsley-validate>
+            	
+                <input type="hidden" name="HTTP_REFERER" value="http://www.research.vcu.edu/forms/osp_closeout_clinical.htm" />
+                <input type="hidden" name="timestamp" value="on">
 
-                      <input type="hidden" name="to" value="ospaward@vcu.edu" />
-
-                      <input type="hidden" name="from" value="E-Closeout Form-Clinical Trial Form" />
-
-                      <input type="hidden" name="subject" value="Closeout-Clinical Trial" />
-                      
-                      <input type="hidden" name="redirect" value="http://www.research.vcu.edu/thankyou.htm">
-                      
-                      <input type="hidden" name="required" value="requested_by,email,pi_last_name,pi_first_name,dept,number,proj_title,spons_name,data_reported,fed_regulations,inventions,reported_inventions,payment_received,site_visit,end_date,closed_irb,subawards_issued,final_technical_reports,subaward_invoice,confidential_returned,confidential_destroyed,confidential_awareness,interventional_trial,sponsor-initiated_trial,investigator-initiated_trial,nct_tracking_number,database_updated,primary_completion_date,database_reporting">
+			  		<span style="display: none">
+    					<label for="comment">Comment</label>
+    					<textarea name="{comment}" id="comment"></textarea>
+ 					 </span>
                       
                       <div id="form_container">
 
@@ -244,9 +240,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 
                 	<p><label for="investigator-initiated_trial">Was this an investigator-initiated clinical trial? Yes/Not Applicable (N/A)</label> <input type="text" name="investigator-initiated_trial" id="investigator-initiated_trial" maxlength="3" size="4" data-parsley-trigger="focusout" required /></p>
                     
-                    <p><label for="nct_tracking_number">Please, provide NCT tracking number (from ClinicalTrials.gov database) or check appropriate box :</label><br/>NCT <input type="text" name="nct_tracking_number" id="nct_tracking_number" maxlength="8" size="8" /> <input type="checkbox" name="nct_tracking_number" value="Not Registered">Not Registered <input type="checkbox" name="nct_tracking_number" value="N/A">N/A</p>
+                    <fieldset>
+                    <legend>Please, provide NCT tracking number (from ClinicalTrials.gov database) or check appropriate box:</label></legend><label for="nct_tracking_number">NCT</label> <input type="text" name="nct_tracking_number" id="nct_tracking_number" maxlength="8" size="8" /> <label><input type="checkbox" name="nct_not_registered" value="Not Registered">Not Registered</label> <label><input type="checkbox" name="nct_n/a" value="N/A">N/A</label>
+                    </fieldset>
                     
-                    <p>PI confirms that the ClinicalTrials.gov database has been updated to reflect a terminating status for the study (withdrawn, terminated, or completed.)<br/><label for="database_updated"><input type="checkbox" name="database_updated" value="PI Confirms" />PI Confirms <input type="checkbox" name="database_updated" value="N/A" />N/A</label></p>
+                    <br>
+                    
+                    <fieldset>
+                    <legend>PI confirms that the ClinicalTrials.gov database has been updated to reflect a terminating status for the study (withdrawn, terminated, or completed.)</legend><label><input type="checkbox" name="database_updated_confirmed" value="PI Confirms" />PI Confirms</label> <label><input type="checkbox" name="database_updated" value="N/A" />N/A</label>
+                    </fieldset>
+                    
+                    <br>
                     
                     <p><label for="primary_completion_date">Results reporting is required within 12 (twelve) months of the primary completion date, i.e. date when the last participant received an intervention. What was the primary completion date?</label><br/><input type="text" name="primary_completion_date" id="primary_completion_date" data-parsley-trigger="focusout" required /><br/>
                 Month-day-year (xx-xx-xxxx all numbers format)</p>
@@ -300,7 +304,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   		<ul>
     		<li><a href="http://www.vcu.edu" target="_blank">Virginia Commonwealth University</a> | <a href="http://www.research.vcu.edu/" target="_blank">Office of Research and Innovation</a></li>
             <li>800 East Leigh Street  PO Box 980568 Richmond, VA 23298</li>
-            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->02/24/2016<!-- #EndDate --> | <a href="../sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
+            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->05/04/2016<!-- #EndDate --> | <a href="../sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
      	</ul>
 </footer><!--end #signature-->
 
