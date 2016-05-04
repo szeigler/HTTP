@@ -363,7 +363,7 @@ body {
 }
 
 #breadcrumbs {
-	margin-bottom:2em;
+	margin-bottom:1.5em;
 	font-size:0.7857142857142857em;
 }
 
@@ -498,17 +498,18 @@ h1 {
 
 h2{ /*same as style1*/
 	color:#000000;
-	font-size:1.428571428571429em; /*20px/14px*/
+	font-size:1.8em;
 	font-family:Arial, Helvetica, sans-serif;
 	padding:0em;
 	margin:0em;
 	font-weight:normal;
-	margin-bottom:.5em; /*6px/12px*/
+	margin-bottom:.25em; /*6px/12px*/
 }
 
 h3 {
-	font-size:1.2em;
-	padding-bottom:.1em;
+	font-size:1.3em;
+	padding-bottom:0;
+	font-weight:normal;
 }
 
 h3.gray_heading {
@@ -523,7 +524,7 @@ h3.gray_heading {
 h4 {
 	font-size:1em; /*12px/12px*/
 	font-weight:bold;
-	padding-bottom: 0.25em;
+	padding-bottom:0;
 }
 	
 /*Images*/
