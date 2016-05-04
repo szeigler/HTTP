@@ -181,7 +181,7 @@ body {
 #header {
 	width:100%;
 	text-align:center;
-	background-color:#cc9300;
+	background-color:#bf8a00;
 	display:inline-block;
 }
 
@@ -843,7 +843,7 @@ p.more {margin-left:8px; margin-top:5px;}
 }
 
 #skip_link a {
-	color:#cc9300;
+	color:#bf8a00;
 }
 
 #skip_link a:hover, #skip_link a:focus	{
