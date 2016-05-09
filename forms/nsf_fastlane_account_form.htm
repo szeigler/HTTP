@@ -111,7 +111,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<ul>
 		<li id="nav_prop_awards"><a href="../osp/index.htm">Proposals &amp; Awards</a></li>
 		<li id="nav_human"><a href="../human_research/index.htm">Human Research</a></li>
-        <li id="nav_animal"><a href="https://www.vcu.edu/research/acup/index.htm">Animal Research</a></li>
+        <li id="nav_animal"><a href="../secure/acup/index.htm">Animal Research</a></li>
         <li id="nav_tech"><a href="../ott/index.htm">Innovation</a></li>
         <li id="nav_conduct"><a href="../integrity_compliance/index.htm">Integrity &amp; Compliance</a></li>
         <li id="nav_rams"><a href="../vcuera/index.htm">RAMS &amp; VCUeRA</a></li>
@@ -140,17 +140,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <p id="breadcrumbs"><a href="index.htm">Forms</a> &raquo; NSF Fastlane Account Form</p>
 
-<form action="http://www.vcu.edu/cgi-bin/mailto" method="post" data-parsley-validate>
+<form method="post" action="http://myforms.vcu.edu/posts" data-parsley-validate>
+            	
+                <input type="hidden" name="HTTP_REFERER" value="http://www.research.vcu.edu/forms/nsf_fastlane_account_form.htm" />
+                <input type="hidden" name="timestamp" value="on">
 
-						<span style="display:none"><textarea name="{comment}"></textarea></span>
-                        
-                        <input type="hidden" name="to" value="dirospa@vcu.edu" />
-                        
-                        <input type="hidden" name="from" value="NSFFastlaneAccount" />
-                        
-                        <input type="hidden" name="subject" value="NSF Fastlane Account Form" />
-                        
-                        <input type="hidden" name="redirect" value="http://www.research.vcu.edu/thankyou.htm">
+			  		<span style="display: none">
+    					<label for="comment">Comment</label>
+    					<textarea name="{comment}" id="comment"></textarea>
+ 					 </span>
                       
                       <div id="form_container">
 
@@ -165,41 +163,53 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                                     <hr />
 
-                     <strong>Please check team (if known):</strong>
+    		<fieldset>
+            
+           	<legend><b>Please check team (if known):</b></legend>
 
-											<ul class="list_no_bullets">
+				<ul class="list_no_bullets">
 
-				<li><input type="radio" name="Teams" value="Blue Team" />Blue Team (ospblue@vcu.edu)</li>
+				<li><label><input type="radio" name="Teams" value="Blue Team" />Blue Team (ospblue@vcu.edu)</label></li>
 
-				<li><input type="radio" name="Teams" value="Gold Team" />Gold Team (ospgold@vcu.edu)</li>
+				<li><label><input type="radio" name="Teams" value="Gold Team" />Gold Team (ospgold@vcu.edu)</label></li>
                 
-                <li><input type="radio" name="Teams" value="Green Team" />Green Team (ospgreen@vcu.edu)</li>
+                <li><label><input type="radio" name="Teams" value="Green Team" />Green Team (ospgreen@vcu.edu)</label></li>
                 
-                <li><input type="radio" name="Teams" value="Red Team" />Red Team (ospred@vcu.edu)</li>
+                <li><label><input type="radio" name="Teams" value="Red Team" />Red Team (ospred@vcu.edu)</label></li>
                 
                 </ul>
-        
-	<strong>Please check campus:</strong>
-    
-    <ul class="list_no_bullets">
+                
+			</fieldset>
+            
+            <fieldset>
+            
+            <legend><b>Please check campus:</b></legend>
+            	 
+    			<ul class="list_no_bullets">
 		
-        <li><input type="radio" name="Campus" value="Monroe Campus" />Monroe Campus</li>
+        		<li><label><input type="radio" name="Campus" value="Monroe Campus" />Monroe Campus</label></li>
 		
-        <li><input type="radio" name="Campus" value="MCV Campus" />MCV Campus</li>
-
-	</ul>
-    	
-        <strong>Please check role:</strong>
-        
-        <ul class="list_no_bullets">
+        		<li><label><input type="radio" name="Campus" value="MCV Campus" />MCV Campus</label></li>
+                
+         	</ul>
+            
+            </fieldset>
+            
+            <fieldset>
+            
+            <legend><b>Please check role:</b></legend>
+                      
+    		<ul class="list_no_bullets">
 		
-        <li><input type="radio" name="Role" value="Principal investigator" />Principal investigator</li>
+        	<li><label><input type="radio" name="Role" value="Principal investigator" />Principal investigator</label></li>
         
-        <li><input type="radio" name="Role" value="Administrator" />Administrator</li>
+       	 	<li><label><input type="radio" name="Role" value="Administrator" />Administrator</label></li>
         
-        <li><input type="radio" name="Role" value="Financial Administrator" />Financial Administrator</li>
+        	<li><label><input type="radio" name="Role" value="Financial Administrator" />Financial Administrator</label></li>
         
-        </ul>
+        	</ul>
+            
+            </fieldset>
 
 		<p><label for="Degree_type">Degree Type: </label><input name="Degree_type" type="text" id="Degree_type" size="30" /></p>
 		
@@ -279,7 +289,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   		<ul>
     		<li><a href="http://www.vcu.edu" target="_blank">Virginia Commonwealth University</a> | <a href="http://www.research.vcu.edu/" target="_blank">Office of Research and Innovation</a></li>
             <li>800 East Leigh Street  PO Box 980568 Richmond, VA 23298</li>
-            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->02/24/2016<!-- #EndDate --> | <a href="../sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
+            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->05/09/2016<!-- #EndDate --> | <a href="../sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
      	</ul>
 </footer><!--end #signature-->
 

@@ -111,7 +111,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<ul>
 		<li id="nav_prop_awards"><a href="../osp/index.htm">Proposals &amp; Awards</a></li>
 		<li id="nav_human"><a href="../human_research/index.htm">Human Research</a></li>
-        <li id="nav_animal"><a href="https://www.vcu.edu/research/acup/index.htm">Animal Research</a></li>
+        <li id="nav_animal"><a href="../secure/acup/index.htm">Animal Research</a></li>
         <li id="nav_tech"><a href="../ott/index.htm">Innovation</a></li>
         <li id="nav_conduct"><a href="../integrity_compliance/index.htm">Integrity &amp; Compliance</a></li>
         <li id="nav_rams"><a href="../vcuera/index.htm">RAMS &amp; VCUeRA</a></li>
@@ -140,17 +140,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <p id="breadcrumbs"><a href="index.htm">Forms</a> &raquo; NIH Commons Account Form</p>
 
-<form action="http://www.vcu.edu/cgi-bin/mailto" method="post" data-parsley-validate>
+<form method="post" action="http://myforms.vcu.edu/posts" data-parsley-validate>
+            	
+                <input type="hidden" name="HTTP_REFERER" value="http://www.research.vcu.edu/forms/nih_era_commons_account_form.htm" />
+                <input type="hidden" name="timestamp" value="on">
 
-						<span style="display:none"><textarea name="{comment}"></textarea></span>
-
-                      	<input type="hidden" name="to" value="dirospa@vcu.edu" />
-                        
-                        <input type="hidden" name="from" value="NIHCommonsAccount" />
-                        
-                        <input type="hidden" name="subject" value="NIH Commons Account Form" />
-                        
-                        <input type="hidden" name="redirect" value="http://www.research.vcu.edu/thankyou.htm">
+			  		<span style="display: none">
+    					<label for="comment">Comment</label>
+    					<textarea name="{comment}" id="comment"></textarea>
+ 					 </span>
 
                       <div id="form_container">
                       
@@ -165,8 +163,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <p><label for="email">Email Address: </label><input name="email" type="email" id="email" size="30" data-parsley-trigger="focusout" required /></p>
 
 <hr />
-            	
-                <strong>Please check team (if known):</strong>
+            	<fieldset>
+                
+                <legend><b>Please check team (if known):</b></legend>
                 
                 <ul class="list_no_bullets">
 				
@@ -179,47 +178,59 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <li><label><input type="radio" name="Teams" value="Red Team" >Red Team (ospred@vcu.edu)</label></li>
                 
                 </ul>
+                </fieldset>
             	
-                <b>Please check campus:</b><br />
+                <fieldset>
+                
+                <legend><b>Please check campus:</b></legend>
                 
                 <ul class="list_no_bullets">
 				
-                <li><input type="radio" name="Campus" value="Monroe Campus" />Monroe Campus</li>
+                <li><label><input type="radio" name="Campus" value="Monroe Campus" />Monroe Campus</label></li>
                 
-                <li><input type="radio" name="Campus" value="MCV Campus" />MCV Campus</li>
+                <li><label><input type="radio" name="Campus" value="MCV Campus" />MCV Campus</label></li>
                 
                 </ul>
+                
+                </fieldset>
 
-            
-            	<strong>Please check role (if applicable you may select more than one role):</strong>
+            	<fieldset>
+                
+                <legend><b>Please check role (if applicable you may select more than one role):</b></legend>
                 
                 <ul class="list_no_bullets">
 				
-                <li><input type="checkbox" name="Role" value="Principal_investigator" id="Principal_investigator" /><label for="Principal_investigator">Principal investigator</label></li>
+                <li><input type="checkbox" name="option1" value="Principal investigator" id="option1" /> <label for="option1">Principal investigator</label></li>
                 
-                <li><input type="checkbox" name="Role" value="Assistant" id="Assistant"  /><label for="Assistant">Assistant</label></li>
+                <li><input type="checkbox" name="option2" value="Assistant" id="option2"  /> <label for="option2">Assistant</label></li>
                 
-                <li><input type="checkbox" name="Role" value="Trainee" id="Trainee" /><label for="Trainee">Trainee</label></li>
+                <li><input type="checkbox" name="option3" value="Trainee" id="option3" /> <label for="option3">Trainee</label></li>
                 
-                <li><input type="checkbox" name="Role" value="Undergraduate_Student" id="Undergraduate_Student" /><label for="Undergraduate_Student">Undergraduate Student</label></li>
+                <li><input type="checkbox" name="option4" value="Undergraduate Student" id="option4" /> <label for="option4">Undergraduate Student</label></li>
                 
-                <li><input type="checkbox" name="Role" value="Graduate_Student" id="Graduate_Student" /><label for="Graduate_Student">Graduate Student</label></li>
+                <li><input type="checkbox" name="option5" value="Graduate Student" id="option5" /> <label for="option5">Graduate Student</label></li>
                 
-                <li><input type="checkbox" name="Role" value="Post_Doctoral" id="Post_Doctoral" /><label for="Post_Doctoral">Post Doctoral</label></li>
+                <li><input type="checkbox" name="option6" value="Post Doctoral" id="option6" /> <label for="option6">Post Doctoral</label></li>
                 
-                <li><input type="checkbox" name="Role" value="Financial_Status_Reporter" id="Financial_Status_Reporter" /><label for="Financial_Status_Reporter">Financial Status Reporter</label></li>
+                <li><input type="checkbox" name="option7" value="Financial Status Reporter" id="option7" /> <label for="option7">Financial Status Reporter</label></li>
                 
                 </ul>
+                
+                </fieldset>
 
-		<p style="text-align:left">Prior NIH support:
+		<fieldset>
+        
+        <legend style="text-align:left">Prior NIH support:</legend>
         
         <ul class="list_no_bullets">
 		
-        <li><input type="radio" name="Prior NIH Support" value="Prior NIH Support No" />No</li>
+        <li><label><input type="radio" name="Prior NIH Support" value="No" />No</label></li>
 		
-        <li><input type="radio" name="Prior NIH Support" value="Prior NIH Support Yes" />Yes</li>
+        <li><label><input type="radio" name="Prior NIH Support" value="Yes" />Yes</label></li>
         
         </ul>
+        
+        </fieldset>
 		
         <p><label for="grant_number">If yes, provide grant number, IC, or serial number: </label><input name="grant_number" type="text" id="grant_number" size="30" /></p>
 
@@ -300,7 +311,7 @@ Format: xxx-xxx-xxxx</p>
   		<ul>
     		<li><a href="http://www.vcu.edu" target="_blank">Virginia Commonwealth University</a> | <a href="http://www.research.vcu.edu/" target="_blank">Office of Research and Innovation</a></li>
             <li>800 East Leigh Street  PO Box 980568 Richmond, VA 23298</li>
-            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->02/24/2016<!-- #EndDate --> | <a href="../sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
+            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->05/09/2016<!-- #EndDate --> | <a href="../sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
      	</ul>
 </footer><!--end #signature-->
 

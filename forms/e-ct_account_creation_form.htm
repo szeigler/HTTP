@@ -139,19 +139,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <p id="breadcrumbs"><a href="index.htm">Forms</a> &raquo; E-CT.gov Account Create Request Form</p>
 
-<form action="http://www.vcu.edu/cgi-bin/mailto" method="post" data-parsley-validate>
-						
-						<span style="display:none"><textarea name="{comment}"></textarea></span>
+<form method="post" action="http://myforms.vcu.edu/posts" data-parsley-validate>
+            	
+                <input type="hidden" name="HTTP_REFERER" value="http://www.research.vcu.edu/forms/e-ct_account_creation_form.htm" />
+                <input type="hidden" name="timestamp" value="on">
 
-                      <input type="hidden" name="to" value="ospred@vcu.edu" />
-
-                      <input type="hidden" name="from" value="E-CT.gov Account Create Request Form" />
-
-                      <input type="hidden" name="subject" value="Request for CT.gov Account Create" />
-                      
-                      <input type="hidden" name="redirect" value="http://www.research.vcu.edu/thankyou.htm">
-                      
-                      <input type="hidden" name="required" value="requested_by,email,pi_last_name,pi_first_name,dept,number,proj_title,entity_name">
+			  		<span style="display: none">
+    					<label for="comment">Comment</label>
+    					<textarea name="{comment}" id="comment"></textarea>
+ 					 </span>
                       
                       <div id="form_container">
 
@@ -193,7 +189,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     
                     <p><label for="proj_title">Project Title:</label><br/><input type="text" name="proj_title" id="proj_title" size="35" data-parsley-trigger="focusout" required /></p>
                     
-                    <p><label for="entity_name">Funding Entity Name:</label><br/><input type="text" name="entity_name" id="entity_name" size="30" /> <input type="checkbox" name="entity_name" value="Not funded" />Not funded</p>
+                    <p><label for="entity_name">Funding Entity Name:</label><br/><input type="text" name="entity_name" id="entity_name" size="30" /> <input type="checkbox" name="not_funded" id="not_funded" value="Not funded" /><label for="not_funded">Not funded</label></p>
 
                     
                  	<p>By clicking “Submit”, this email will be sent to <a href="mailto:ospred@vcu.edu">ospred@vcu.edu</a>, which is the Office of Sponsored Programs Red Team email. You will be contacted by Red Team staff if we have any further questions.</p>
@@ -240,7 +236,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   		<ul>
     		<li><a href="http://www.vcu.edu" target="_blank">Virginia Commonwealth University</a> | <a href="http://www.research.vcu.edu/" target="_blank">Office of Research and Innovation</a></li>
             <li>800 East Leigh Street  PO Box 980568 Richmond, VA 23298</li>
-            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->02/24/2016<!-- #EndDate --> | <a href="../sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
+            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->05/02/2016<!-- #EndDate --> | <a href="../sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
      	</ul>
 </footer><!--end #signature-->
 
