@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>VCU Office of Research and Innovation</title>
+
+<meta name="Description" content="VCU Office of Research and Innovation enables investigators to effectively compete for research funding, responsibly conduct research in compliance with mandated policies, and broadly disseminate knowledge gained and discoveries made." />
+<!-- TemplateEndEditable -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--iPhone image scaling fix-->
+
+<link href="../secure/css/page_layout.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="../secure/css/media_queries.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" href="../secure/css/print.css" type="text/css" media="print" />
+<link href='https://fonts.googleapis.com/css?family=Enriqueta:400,700' rel='stylesheet' type='text/css'>
+
+<link REL="SHORTCUT ICON" HREF="//www.research.vcu.edu/favicon.ico"> <!--icon in the address bar...do NOT delete-->
+   
+<script type="text/javascript" src="//research.vcu.edu/js/respond.js"></script>
+
+<!-- TemplateBeginEditable name="head" -->
+
+<!-- TemplateEndEditable -->
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5PB7J4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5PB7J4');</script>
+<!-- End Google Tag Manager -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-19510982-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+
+<div id="page">
+	<header id="header">
+    	<div id="logo_bar">
+        	<div id="vcu_logo_desktop">
+            	<a href="http://www.vcu.edu" target="_blank"><img src="../secure/images/identity_header/branding_bar_vcu.png" alt="Virginia Commonwealth University" id="vcu_logo_vcu" /></a>
+                <a href="http://www.makeitreal.vcu.edu" target="_blank"><img src="../secure/images/identity_header/branding_bar_real.png" alt="Make it real." id="vcu_logo_real" /></a>
+         	</div>
+            <a href="http://www.vcu.edu" target="_blank"><img src="https://identity.vcu.edu/widgets/branding/black/responsive/images/vcuseal.gif" alt="VCU logo" id="vcu_logo_mobile" /></a>
+       	</div>
+        <span id="skip_link"><a href="#mainContent">skip to main content</a></span>
+        <div id="identity_search">
+        	<div id="vcu_research">
+            	<a href="../index.htm">Office of Research and Innovation</a>
+        	</div><!--end vcu_research-->
+			<div id="search">
+  				<form action="http://search.vcu.edu/search" method="get">
+  				<input type="text" name="q" id="searchField" placeholder="Search" />
+                <input type="hidden" name="query" value="">
+              	<input type="hidden" name="proxystylesheet" value="research">
+          		<input type="hidden" name="output" value="xml_no_dtd">
+               	<input type="hidden" name="client" value="research"> 
+              	<input type="hidden" name="sort" value="date:D:L:d1">
+               	<input type="hidden" name="entqr" value="3">
+              	<input type="hidden" name="oe" value="UTF-8">
+               	<input type="hidden" name="ie" value="UTF-8">
+               	<input type="hidden" name="ud" value="1">
+                <input type="hidden" name="site" value="research-main">
+  				<label for="searchField">Search for:</label>
+  				<button class="search_btn" type="submit"><img src="../secure/graphics/search_blank.png" alt="search button" /></button>
+</form>
+           	</div>
+  		</div><!--end identity_search-->
+  
+<div id="top_nav_container">
+<nav id="top_nav">
+	<ul>
+		<li id="nav_prop_awards"><a href="../osp/index.htm">Proposals &amp; Awards</a></li>
+		<li id="nav_human"><a href="../human_research/index.htm">Human Research</a></li>
+        <li id="nav_animal"><a href="../secure/acup/index.htm">Animal Research</a></li>
+        <li id="nav_tech"><a href="../ott/index.htm">Innovation</a></li>
+        <li id="nav_conduct"><a href="../integrity_compliance/index.htm">Integrity &amp; Compliance</a></li>
+        <li id="nav_rams"><a href="../vcuera/index.htm">RAMS &amp; VCUeRA</a></li>
+	</ul>
+</nav>
+</div> <!-- end top_nav_container -->
+</header><!--end header-->
+<div id="main">
+	<div id="page_head">            
+            <div id="heading_bar">
+				<!-- TemplateBeginEditable name="heading bar" -->            	
+                <h1>Resources for Researchers</h1>
+				<!-- TemplateEndEditable -->     	
+            </div><!--end heading_bar-->
+            
+            <div id="head_image">
+		    <!-- TemplateBeginEditable name="head image" -->            	
+                <img src="../images/head_images/resources.jpg" alt="Researchers at work" />
+                <!-- TemplateEndEditable -->            
+          	</div><!--end head image-->
+    	</div><!--end page_head-->
+	<div id="content">       
+      <div id="content_text">
+      <a id="mainContent"></a>
+<!-- TemplateBeginEditable name="content" -->
+    		<h2>Page Title</h2>
+    		<p>Page text</p>
+        <!-- TemplateEndEditable -->
+      </div><!--end content_text-->
+    </div><!--end content-->    
+    <nav id="right_nav">
+            
+    	<div class="nav_heading">VP for Research and Innovation</div>
+        	<ul>
+        		<li><a href="../vpr/index.htm">VP for Research and Innovation</a></li>
+                <li><a href="../centers_cores/institutes.htm">Institutes and Centers</a></li>
+                <li><a href="../centers_cores/core_laboratories.htm">Research Cores</a></li>
+                <li><a href="../vpr/research_fund/index.htm">Research Quest Fund</a></li>
+                <li><a href="../vpr/grant_writing/index.htm">Grant Writing Institute</a></li>
+                <li><a href="../research_development/index.htm">Research Development</a></li>
+                <li><a href="../ugresources/index.htm">Undergraduate Research</a></li>
+        		<li><a href="../postdoc/index.htm">Postdoctoral Services</a></li>
+                <li><a href="../vpr/research_compliance.htm">Research Compliance Matrix</a></li>               
+        	</ul>
+            
+    	<div class="nav_heading">Research Quick Links</div>
+        	<ul>                                                                         
+                <li class="right_nav_btn"><a href="../forms/index.htm"><span class="glyphicon glyphicon-edit"></span><br>Forms</a></li>
+                <li class="right_nav_btn"><a href="../events/index.htm"><span class="glyphicon glyphicon-calendar"></span><br>Events</a></li>
+                <li class="right_nav_btn"><a href="../policies/index.htm"><span class="glyphicon glyphicon-list-alt"></span><br>Policies</a></li>                
+                <li class="right_nav_btn"><a href="../vpr/contactus.htm"><span class="glyphicon glyphicon-earphone"></span><br>Contact</a></li>
+                <li><a href="http://www.adobe.com/products/acrobat/readstep2.html" target="_blank">Download Adobe Reader<!-- #BeginLibraryItem "/Library/pdf_logo.lbi" --><img src="//research.vcu.edu/graphics/pdf_logo.gif" alt="pdf logo" class="pdf_logo" /><!-- #EndLibraryItem --></a></li>
+                <li id="helpline"><a href="http://www.assurance.vcu.edu/reporting.html" target="_blank"><img src="../secure/images/helpline.jpg" alt="VCU HelpLine: Don't know where to turn? Ethics violations hurt everyone." /></a></li>
+        	</ul>
+            
+		<div></div>
+       	</nav><!--end right_nav-->    
+    
+   <footer id="signature">
+  		<ul>
+    		<li><a href="http://www.vcu.edu" target="_blank">Virginia Commonwealth University</a> | <a href="http://www.research.vcu.edu/" target="_blank">Office of Research and Innovation</a></li>
+            <li>800 East Leigh Street  PO Box 980568 Richmond, VA 23298</li>
+            <li><a href="mailto:erahelp@vcu.edu?subject=Website%20Comments" target="_blank">Contact Us</a> | Updated: <!-- #BeginDate format:Am3 -->05/10/2016<!-- #EndDate --> | <a href="../sitemap.htm">Site Map</a> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text-only version</a></li>
+     	</ul>
+</footer><!--end #signature-->
+
+</div><!--end main-->
+
+<div id="vcu_footer">
+
+	<a href="http://www.makeitreal.vcu.edu" target="_blank"><img src="https://identity.vcu.edu/widgets/branding/black/responsive/images/makeitrealFooter.gif" alt="Make It Real" /></a>
+    
+    <a href="http://www.vcu.edu" target="_blank"><img src="https://identity.vcu.edu/widgets/branding/black/responsive/images/vcubar-footer.gif" alt="Virginia Commonwealth University" /></a>
+    
+</div>
+	
+</div><!--end .page-->
+</body>
+</html>
